@@ -83,9 +83,9 @@ Käytin komentoa sudo salt-call --local grains.items. Komennon tuloste antoi kat
 
 ## Lähteet:
 
-- Karvinen 2023: https://terokarvinen.com/2021/salt-run-command-locally/
-- Karvinen 2023: https://terokarvinen.com/2021/install-debian-on-virtualbox/
-- Karvinen 2023: https://terokarvinen.com/2023/create-a-web-page-using-github/
+- Karvinen 2023: Run Salt Command Locally. https://terokarvinen.com/2021/salt-run-command-locally/
+- Karvinen 2023: Install Debian On Virtualbox. https://terokarvinen.com/2021/install-debian-on-virtualbox/
+- Karvinen 2023: Create a Web Page Using Github. https://terokarvinen.com/2023/create-a-web-page-using-github/
   
 
 
