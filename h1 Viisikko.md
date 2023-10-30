@@ -20,6 +20,7 @@ Saltin asennuksen jälkeen tarkistin, että asennus oli onnistunut. Käytin sen 
 Komento asentaa koneelle tree-palvelun. Tulosteen changes-kohdasta näkyy asennettu versio. Succeeded-kohta kertoo funktion onnistuneen. 
 
 <b>pkg.removed</b>
+
 Komento poistaa koneelle asennetun tree-palvelun. Tuloste toimii samalla tavalla kuin pkg.installed, eli changes-kohta kertoo poistetun version ja succeeded=1 kertoo funktion ajon onnistuneen.
 
 ## 2. file
@@ -30,11 +31,13 @@ Komento poistaa koneelle asennetun tree-palvelun. Tuloste toimii samalla tavalla
 Tuloste kertoo, että tiedosto "hellotero" on luotu onnistuneesti hakemistoon /tmp. 
 
 <b>file.managed contents</b>
-Funktio luo uuden tiedoston "moitero" jonka sisältönä on teksti "foo". Contents määrittää tiedoston sisällön. Alla olevassa kuvassa tarkistettu, että tiedoston sisältö on oikeasti luotu. Käytin komentoa sudo salt-call --local -l info state.single file.managed /tmp/moitero contents="foo". 
+
+Funktio luo uuden tiedoston "moitero" jonka sisältönä on teksti "foo". Contents määrittää tiedoston sisällön. Käytin komentoa sudo salt-call --local -l info state.single file.managed /tmp/moitero contents="foo". Alla olevassa kuvassa tarkistettu, että tiedoston sisältö on oikeasti luotu. 
 
 <img width="239" alt="Näyttökuva 2023-10-30 100819" src="https://github.com/esskra/palvelinten_hallinta/assets/148875302/70850ec9-43bd-46c7-afc7-e3f82180a465">
 
 <b>file.absent</b>
+
 Funktio poistaa valitun tiedoston. Käytin komentoa sudo salt-call --local -l info state.single file.absent /tmp/hellotero, ja se poisti /tmp-hakemistosta "hellotero" tiedoston. 
 
 
