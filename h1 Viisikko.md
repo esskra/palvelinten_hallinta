@@ -40,4 +40,34 @@ Funktio luo uuden tiedoston "moitero" jonka sisältönä on teksti "foo". Conten
 
 Funktio poistaa valitun tiedoston. Käytin komentoa sudo salt-call --local -l info state.single file.absent /tmp/hellotero, ja se poisti /tmp-hakemistosta "hellotero" tiedoston. 
 
+## 3. service
+
+<b>service.running</b>
+
+<img width="464" alt="Näyttökuva 2023-10-30 101306" src="https://github.com/esskra/palvelinten_hallinta/assets/148875302/20f5a6eb-957a-4582-85b9-39e885eeab3c">
+
+Funktiolla pystyy käynnistämään palveluita. Käytin komentoa sudo salt-call --local -l info state.single service.running apache2 enable=True. Sain ensin tulosteen, jossa kerrottiin, ettei käynnistys onnistunut koska apache2 ei ollut saatavilla. Asensin apache2 komennolla sudo apt-get install apache2, jonka jälkeen sain onnistuneesti ajettua funktion. 
+
+<b>service.dead</b>
+
+<img width="464" alt="Näyttökuva 2023-10-30 101500" src="https://github.com/esskra/palvelinten_hallinta/assets/148875302/2c938599-92f3-4f4d-929e-47004417ccb5">
+
+Muuttamalla edellisen funktion muotoon service.dead enable=False, voidaan "tappaa", eli ajaa valittu palvelu alas. Tuloste kertoo taas funktion onnistuneen. 
+
+## 4. user
+<b>user.present</b>
+
+<img width="464" alt="Näyttökuva 2023-10-30 101748" src="https://github.com/esskra/palvelinten_hallinta/assets/148875302/9eebc9f0-c4d1-4865-9150-ba41e0e8d609">
+
+
+user.present funktio luo uuden käyttäjän. Kuvasta näkee, kuinka käyttäjä "terote08" on luotu onnistuneesti.
+
+<b>user.absent</b>
+Funktio poistaa käyttäjän. Tuloste kertoo, että aikaisemmin luotu käyttäjä ja group on poistettu onnistuneesti.
+
+## 5. cmd
+<b>cmd.run</b>
+
+Käytin sudo salt-call --local -l info state.single cmd.run 'touch /tmp/foo' creates="/tmp/foo" komentoa luodakseni /tmp/ hakemistoon tiedoston "foo". 
+
 
