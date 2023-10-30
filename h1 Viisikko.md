@@ -80,7 +80,9 @@ Käytin komentoa sudo salt-call --local grains.items. Komennon tuloste antoi kat
 
 <img width="464" alt="image" src="https://github.com/esskra/palvelinten_hallinta/assets/148875302/0f5e3b11-75c0-4597-9f10-cb495ad3c2cc">
 
-##Lähteet:
+
+## Lähteet:
+
 https://terokarvinen.com/2021/salt-run-command-locally/
 https://terokarvinen.com/2021/install-debian-on-virtualbox/
 https://terokarvinen.com/2023/create-a-web-page-using-github/
