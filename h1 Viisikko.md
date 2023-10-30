@@ -15,7 +15,7 @@ Saltin asennuksen jälkeen tarkistin, että asennus oli onnistunut. Käytin sen 
 ## 1. pkg
 <b>pkg. installed</b>
 
-<img width="464" alt="Näyttökuva 2023-10-30 100123" src="https://github.com/esskra/palvelinten_hallinta/assets/148875302/77414ca9-f0fa-4f04-8c80-6591c3ce6c0b">
+<img width="464" alt="image" src="https://github.com/esskra/palvelinten_hallinta/assets/148875302/d76da5f0-9c7d-4747-8151-c067be8a72ee">
 
 Komento asentaa koneelle tree-palvelun. Tulosteen changes-kohdasta näkyy asennettu versio. Succeeded-kohta kertoo funktion onnistuneen. 
 
