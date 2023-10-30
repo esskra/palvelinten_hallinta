@@ -8,10 +8,9 @@ Aja salt-komento paikallisesti
 - Saltin avulla voi ajaa komennot paikallisesti ja nähdä myös niiden tulokset heti
 - Saltin tärkeimmät tilafunktiot ovat pkg, file, service, user ja cmd.
 
-a) Asenna Salt (Salt-minion) koneellesi.
+a) ### Asenna Salt (Salt-minion) koneellesi.
 Saltin asennuksen jälkeen tarkistin, että asennus oli onnistunut. Käytin sen tarkistamiseen sudo salt-call --version komentoa, joka antoi tulokseksi asennetun version: salt-call 3006.4 (Sulfur)
 b) Viisi tärkeintä. 
-<img width="464" alt="Näyttökuva 2023-10-30 100123" src="https://github.com/esskra/palvelinten_hallinta/assets/148875302/ec2230fa-3844-46f1-bab2-1a24b7addb08">
 
 c)
 d)
