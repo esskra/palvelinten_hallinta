@@ -71,7 +71,7 @@ Funktio poistaa käyttäjän. Tuloste kertoo, että aikaisemmin luotu käyttäj�
 Käytin sudo salt-call --local -l info state.single cmd.run 'touch /tmp/foo' creates="/tmp/foo" komentoa luodakseni /tmp/ hakemistoon tiedoston "foo". 
 
 ## c) Idempotentti. Anna esimerkki idempotenssista. 
-Testasin idempotentin ilmenemistä yrittämällä ajaa saman komennon, kuin edellisen tehtävän kohdassa 5, jossa luotiin /tmp/ hakemistoon tiedosto "foo". Tuloste kertoo, että komento on ajettu, mutta tiedostoa ei luoda, koska se on jo olemassa. 
+Testasin idempotentin ilmenemistä yrittämällä ajaa saman komennon, kuin edellisen tehtävän kohdassa 5, jossa luotiin /tmp/ hakemistoon tiedosto "foo". Tuloste kertoo, että komento on ajettu, mutta tiedostoa ei luoda, koska se on jo olemassa, eli se pysyi muuttumattomana. 
 
 <img width="464" alt="Näyttökuva 2023-10-30 102433" src="https://github.com/esskra/palvelinten_hallinta/assets/148875302/a042519c-e64f-443c-b47f-4bb5f4c1f867">
 
