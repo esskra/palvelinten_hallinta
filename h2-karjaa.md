@@ -8,8 +8,9 @@
 
 <b>Karvinen 2017: [Vagrant Revisited – Install & Boot New Virtual Machine in 31 seconds](https://terokarvinen.com/2017/04/11/vagrant-revisited-install-boot-new-virtual-machine-in-31-seconds/)</b>
 - Vagrant asentaa uuden virtuaalikoneen automaattisesti, jonka jälkeen siihen on mahdollista luoda SSH-yhteys.
-- Vagrantin ja virtuaalikoneen asennus: ```$ sudo apt-get -y install vagrant virtualbox```
-- 
+- Vagrantin ja virtuaalikoneen asennus: ``$ sudo apt-get -y install vagrant virtualbox``
+- Uuden koneen alustaminen: ``$ vagrant init bento/ubuntu-16.04``
+  
 
 
 <b>Karvinen 2023: [Salt Vagrant - automatically provision one master and two slaves](https://terokarvinen.com/2023/salt-vagrant/)</b>
