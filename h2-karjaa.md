@@ -31,6 +31,7 @@ Asennus käynnistyi käyttöehtojen hyväksymisen jälkeen. Asennuksessa kesti m
 <img width="281" alt="Näyttökuva 2023-11-06 004832" src="https://github.com/esskra/palvelinten_hallinta/assets/148875302/b4c82905-0f3e-4d38-9abb-9513eaa21de1">
 
 ## b) Yksi maankiertäjä.
+Asensin Vagrantin omalle kannettavalleni, joten aloitin tehtävän avaamalla Windowsin komentokehotteen ja tarkistamalla, että Vagrant oli asentunut komennolla ``$ vagrant -v``.
 
 ## Lähteet:
 https://developer.hashicorp.com/vagrant/downloads
