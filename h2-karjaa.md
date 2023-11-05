@@ -28,6 +28,7 @@ Asennus käynnistyi käyttöehtojen hyväksymisen jälkeen. Asennuksessa kesti m
 
 <img width="384" alt="Näyttökuva 2023-11-06 004817" src="https://github.com/esskra/palvelinten_hallinta/assets/148875302/7bef90a7-e408-4daf-a459-0d6f396893ce">
 
+
 <img width="281" alt="Näyttökuva 2023-11-06 004832" src="https://github.com/esskra/palvelinten_hallinta/assets/148875302/b4c82905-0f3e-4d38-9abb-9513eaa21de1">
 
 ## b) Yksi maankiertäjä.
@@ -42,7 +43,7 @@ Käynnistyksen jälkeen SSH-yhteyden luominen komennolla ``$ vagrant ssh``. SSH-
 
 <img width="960" alt="Näyttökuva 2023-11-06 014007" src="https://github.com/esskra/palvelinten_hallinta/assets/148875302/b9578dae-193d-4926-9227-3fad00422998">
 
-Lopuksi vielä tarkistin, että virtuaalikone oli automaattisesti luotu VirtualBoxiin, jonka jälkeen poistin koneen komennolla ``$ vagrant destroy``. 
+Lopuksi vielä tarkistin, että virtuaalikone oli automaattisesti luotu VirtualBoxiin, jonka jälkeen poistuin koneesta ``exit``-komennolla, jonka jälkeen poistin koneen komennolla ``$ vagrant destroy``. 
 
 ## Lähteet:
 https://developer.hashicorp.com/vagrant/downloads
