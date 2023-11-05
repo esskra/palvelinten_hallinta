@@ -14,8 +14,6 @@
 - SSH-yhteyden luominen: ``$ vagrant ssh``
 - Virtuaalikoneen ja sen tiedostojen tuhoaminen komennolla ``$ vagrant destroy``
   
-
-
 <b>Karvinen 2023: [Salt Vagrant - automatically provision one master and two slaves](https://terokarvinen.com/2023/salt-vagrant/)</b>
 - Artikkelissa käsitellään kolmen virtuaalikoneen luomista valmiissa verkossa Saltin avulla.
 - Koneiden asennuksen ja käynnistyksen jälkeen kirjaudutaan herra-koneelle ja hyväksytään orja-koneiden lähettämät avaimet.
@@ -23,10 +21,7 @@
 - Tavoitteena idempotentti. Artikkelissa esimerkkejä komennoista
 - Infra as code, artikkelin esimerkkikomennot sls. tiedostoon.
 - Lopussa ohje koneiden tuhoamiseen (``$ vagrant destroy``)
-- 
-
-
-
+  
 ## a) Asenna Vagrant
 
 
