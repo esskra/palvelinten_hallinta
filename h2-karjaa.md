@@ -17,6 +17,15 @@
 
 
 <b>Karvinen 2023: [Salt Vagrant - automatically provision one master and two slaves](https://terokarvinen.com/2023/salt-vagrant/)</b>
+- Artikkelissa käsitellään kolmen virtuaalikoneen luomista valmiissa verkossa Saltin avulla.
+- Koneiden asennuksen ja käynnistyksen jälkeen kirjaudutaan herra-koneelle ja hyväksytään orja-koneiden lähettämät avaimet.
+- Orja-koneista kerätään tietoa  (``$ sudo salt '*' grains.items``)
+- Tavoitteena idempotentti. Artikkelissa esimerkkejä komennoista
+- Infra as code, artikkelin esimerkkikomennot sls. tiedostoon.
+- Lopussa ohje koneiden tuhoamiseen (``$ vagrant destroy``)
+- 
+
+
 
 ## a) Asenna Vagrant
 
