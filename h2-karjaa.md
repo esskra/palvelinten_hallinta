@@ -23,7 +23,8 @@
 - Lopussa ohje koneiden tuhoamiseen (``$ vagrant destroy``)
   
 ## a) Asenna Vagrant
-Asensin Vagrantista Windowsin AMD64 2.4.0-version [tästä](https://developer.hashicorp.com/vagrant/downloads) linkistä.
+Asensin Vagrantista Windowsin AMD64 2.4.0-version [tästä](https://developer.hashicorp.com/vagrant/downloads) linkistä. Käytössäni on Acer Swift 3-kannettava, jonka käyttöjärjestelmänä toimii Windows 11 HOME 22H2.
+
 
 
 
