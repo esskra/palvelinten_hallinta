@@ -26,9 +26,9 @@
 Asensin Vagrantista Windowsin AMD64 2.4.0-version [tästä](https://developer.hashicorp.com/vagrant/downloads) linkistä. Käytössäni on Acer Swift 3-kannettava, jonka käyttöjärjestelmänä toimii Windows 11 HOME versio 22H2.
 Asennus käynnistyi käyttöehtojen hyväksymisen jälkeen. Asennuksessa kesti muutamia minuutteja, jonka jälkeen suoritin ohjelman suositteleman järjestelmän uudelleenkäynnistyksen.
 
-!<img width="384" alt="Näyttökuva 2023-11-06 004817" src="https://github.com/esskra/palvelinten_hallinta/assets/148875302/7bef90a7-e408-4daf-a459-0d6f396893ce">!
+!<img width="384" alt="Näyttökuva 2023-11-06 004817" src="https://github.com/esskra/palvelinten_hallinta/assets/148875302/7bef90a7-e408-4daf-a459-0d6f396893ce">
 
-!<img width="281" alt="Näyttökuva 2023-11-06 004832" src="https://github.com/esskra/palvelinten_hallinta/assets/148875302/b4c82905-0f3e-4d38-9abb-9513eaa21de1">!
+!<img width="281" alt="Näyttökuva 2023-11-06 004832" src="https://github.com/esskra/palvelinten_hallinta/assets/148875302/b4c82905-0f3e-4d38-9abb-9513eaa21de1">
 
 ## b) Yksi maankiertäjä.
 Asensin Vagrantin omalle kannettavalleni, joten aloitin tehtävän avaamalla Windowsin komentokehotteen ja tarkistamalla, että Vagrant oli asentunut komennolla ``$ vagrant -v``. Komento kertoi version olevan asentamani 2.4.0, joten asennus oli onnistunut. 
