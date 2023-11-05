@@ -30,6 +30,8 @@ Asennus käynnistyi käyttöehtojen hyväksymisen jälkeen. Asennuksessa kesti m
 
 <img width="281" alt="Näyttökuva 2023-11-06 004832" src="https://github.com/esskra/palvelinten_hallinta/assets/148875302/b4c82905-0f3e-4d38-9abb-9513eaa21de1">
 
+## b) Yksi maankiertäjä.
+
 ## Lähteet:
 https://developer.hashicorp.com/vagrant/downloads
 
