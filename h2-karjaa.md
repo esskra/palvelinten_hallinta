@@ -31,7 +31,7 @@ Asennus käynnistyi käyttöehtojen hyväksymisen jälkeen. Asennuksessa kesti m
 <img width="281" alt="Näyttökuva 2023-11-06 004832" src="https://github.com/esskra/palvelinten_hallinta/assets/148875302/b4c82905-0f3e-4d38-9abb-9513eaa21de1">
 
 ## b) Yksi maankiertäjä.
-Asensin Vagrantin omalle kannettavalleni, joten aloitin tehtävän avaamalla Windowsin komentokehotteen ja tarkistamalla, että Vagrant oli asentunut komennolla ``$ vagrant -v``. Komento kertoi version olevan asentamani 2.4.0, joten asennus oli onnistunut. Alla kuva, jossa näkyy versio sekä käyttöjärjestelmän alustaminen komennolla ``$ vagrant init bento/ubuntu-22.04``.
+Asensin Vagrantin omalle kannettavalleni, joten aloitin tehtävän avaamalla Windowsin komentokehotteen ja tarkistamalla, että Vagrant oli asentunut komennolla ``$ vagrant -v``. Komento kertoi version olevan asentamani 2.4.0, joten asennus oli onnistunut. Tämän jälkeen vuorossa oli koneen luominen komennolla ``$ vagrant init bento/ubuntu-22.04``. Komento asentaa Ubuntun 22.04 käyttöjärjestelmän, joka on Ubuntun viimeisin LTS-käyttöjärjestelmä. 
 
 <img width="536" alt="Näyttökuva 2023-11-06 012837" src="https://github.com/esskra/palvelinten_hallinta/assets/148875302/04d4d1dd-ccae-4f07-8961-2e4e3cbc8fa4">
 
