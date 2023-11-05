@@ -35,6 +35,8 @@ Asensin Vagrantin omalle kannettavalleni, joten aloitin tehtävän avaamalla Win
 
 <img width="536" alt="Näyttökuva 2023-11-06 012837" src="https://github.com/esskra/palvelinten_hallinta/assets/148875302/04d4d1dd-ccae-4f07-8961-2e4e3cbc8fa4">
 
+Tämän jälkeen käynnistin Vagrantin komennolla ``$ vagrant up``. Käynnistyksessä meni muutamia minuutteja. Käynnistyksen jälkeen SSH-yhteyden luominen komennolla ``$ vagrant ssh``. SSH-yhteyden luominen onnistui ja olin sisällä koneessa. Lopuksi vielä tarkistin, että virtuaalikone oli automaattisesti luotu VirtualBoxiin, jonka jälkeen poistin koneen komennolla ``$ vagrant destroy``. 
+
 ## Lähteet:
 https://developer.hashicorp.com/vagrant/downloads
 
