@@ -23,6 +23,7 @@
 - Lopussa ohje koneiden tuhoamiseen (``$ vagrant destroy``)
   
 ## a) Asenna Vagrant
+Asensin Vagrantista Windowsin AMD64 2.4.0-version tästä [linkistä](https://developer.hashicorp.com/vagrant/downloads).
 
 
 
