@@ -27,7 +27,7 @@ Asensin Vagrantista Windowsin AMD64 2.4.0-version [tästä](https://developer.ha
 Asennus käynnistyi käyttöehtojen hyväksymisen jälkeen. Asennuksessa kesti muutamia minuutteja, jonka jälkeen suoritin ohjelman suositteleman järjestelmän uudelleenkäynnistyksen.
 
 <img width="384" alt="Näyttökuva 2023-11-06 004817" src="https://github.com/esskra/palvelinten_hallinta/assets/148875302/7bef90a7-e408-4daf-a459-0d6f396893ce">
-
+<br>
 <img width="281" alt="Näyttökuva 2023-11-06 004832" src="https://github.com/esskra/palvelinten_hallinta/assets/148875302/28a32146-5b5a-4fd6-b05c-a1fb9cf5b042">
 
 
