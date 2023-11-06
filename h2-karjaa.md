@@ -128,7 +128,7 @@ Rehellisyyden nimissä tehtävä ei vielä täysin auennut itselleni, vaikka ohj
 ## Lähteet:
 
 - HashiCorp, Install Vagrant. Luettavissa: https://developer.hashicorp.com/vagrant/downloads Luettu: 5.11.2023
-- What is the definition of "cattle not pets"?. Luettavissa: https://devops.stackexchange.com/questions/653/what-is-the-  definition-of-cattle-not-pets#654 Luettu: 5.11.2023
+- What is the definition of "cattle not pets"?. Luettavissa: https://devops.stackexchange.com/questions/653/what-is-the-definition-of-cattle-not-pets#654 Luettu: 5.11.2023
 - Salt Project: Ubuntu. Luettavissa: https://docs.saltproject.io/salt/install-guide/en/latest/topics/install-by-operating-system/ubuntu.html Luettu: 5.11.2023
 - Karvinen, T. 2023. Salt Vagrant - automatically provision one master and two slaves. Luettavissa: https://terokarvinen.com/2023/salt-vagrant/ Luettu 5.11.2023
 - Karvinen, T. 2017. Vagrant Revisited – Install & Boot New Virtual Machine in 31 seconds. Luettavissa: https://terokarvinen.com/2017/04/11/vagrant-revisited-install-boot-new-virtual-machine-in-31-seconds/ Luettu: 5.11.2023
