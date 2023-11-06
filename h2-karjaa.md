@@ -37,7 +37,7 @@ Asensin Vagrantin omalle kannettavalleni, joten aloitin tehtävän avaamalla Win
 
 Tämän jälkeen vuorossa oli koneen luominen komennolla ``$ vagrant init bento/ubuntu-22.04``. Komento asentaa Ubuntun 22.04 käyttöjärjestelmän, joka on Ubuntun viimeisin LTS-käyttöjärjestelmä. Koneen luomisen jälkeen käynnistin Vagrantin komennolla ``$ vagrant up``. Käynnistyksessä meni muutamia minuutteja. 
 
-<img width="529" alt="Näyttökuva 2023-11-06 013612" src="https://github.com/esskra/palvelinten_hallinta/assets/148875302/6774f2f1-b297-4069-aa12-abe4a25b541d">
+<img width="529" alt="Näyttökuva 2023-11-06 013612" src="https://github.com/esskra/palvelinten_hallinta/assets/148875302/21aa6190-836e-4ea3-87d3-ed4ad27a5cf2">
 
 Käynnistyksen jälkeen SSH-yhteyden luominen komennolla ``$ vagrant ssh``. SSH-yhteys onnistui ja olin sisällä koneessa. 
 Tarkistin myös, että virtuaalikone oli automaattisesti luotu VirtualBoxiin. Alla olevassa kuvassa SSH-yhteys muodostettu, ja vasemmalla voi nähdä Vagrantin luoman koneen VirtualBoxin valikossa.
