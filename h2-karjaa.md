@@ -1,4 +1,4 @@
-# h2 Karjaa
+<img width="406" alt="image" src="https://github.com/esskra/palvelinten_hallinta/assets/148875302/80c9aa04-f138-4327-9135-111d9dee2b8a"># h2 Karjaa
 ## x) Lue ja tiivistä.
 
 <b>Slater 2017: [What is the definition of "cattle not pets"?](https://devops.stackexchange.com/questions/653/what-is-the-definition-of-cattle-not-pets#654)</b>
@@ -79,8 +79,27 @@ SSH-yhteyden luomisen jälkeen hyväksyin orjien avaimet komennolla ``$ sudo sal
 <img width="418" alt="Näyttökuva 2023-11-06 115332" src="https://github.com/esskra/palvelinten_hallinta/assets/148875302/9f31af0f-a018-4e60-97ee-16d9bcc4d802">
 
 ## e) Aja useita idempotentteja (state.single) komentoja verkon yli.
+Lähdin testaamaan idempotenttia asentamalla Apache2:n komennolla ``$ sudo salt '*' state.single pkg.installed apache2``. Alla olevan kuvan yläreunasta näkyy yhteenveto t001 koneelle ja alhaalla t002 koneen asennustapahtuman alku. Kuvasta näkyy, että asennus onnistui (Changed: 1), koska Apache2-palvelua ei löytynyt koneilta.
 
+<img width="429" alt="Näyttökuva 2023-11-06 121525" src="https://github.com/esskra/palvelinten_hallinta/assets/148875302/3ddfb8ee-2ae1-44d6-b1b4-b75fe4efcd5b">
 
+Ajoin komennon uudestaan luodakseni idempotentin. Tuloste kertoo "All specified packages are already installed", eli muutoksia ei tapahdu. Lopputulos oli sama molemmilla koneilla.
+
+<img width="406" alt="Näyttökuva 2023-11-06 122017" src="https://github.com/esskra/palvelinten_hallinta/assets/148875302/6572ac60-44b7-472c-8ac8-748eaf95a715">
+
+Asennuksen jälkeen lähdin testaamaan toimiiko Apache2 odotetusti komennolla ``$ sudo salt '*' state.single service.running apache2``. Tuloste kertoo, että Apache2 on päällä.
+
+<img width="402" alt="Näyttökuva 2023-11-06 122435" src="https://github.com/esskra/palvelinten_hallinta/assets/148875302/65833342-e3ea-474f-9b02-76d9a3cc9a43">
+
+Apache2 toimi toivotulla tavalla, joten seuraavaksi ajoin komennon ``$ sudo salt '*' state.single service.dead apache2`` sammuttaakseni palvelun. Alla olevasta kuvasta näkee, että Apache2 oli onnistuneesti "tapettu".
+
+<img width="441" alt="Näyttökuva 2023-11-06 122724" src="https://github.com/esskra/palvelinten_hallinta/assets/148875302/30d553b0-2096-47ff-9970-54691124642f">
+
+Ajoin taas komennon uudestaan luodakseni idempotentin, ja tuloste kertoo että Apache2 on jo "kuollut". Muutoksia ei siis tapahdu.
+
+<img width="400" alt="Näyttökuva 2023-11-06 122820" src="https://github.com/esskra/palvelinten_hallinta/assets/148875302/0efbfed0-ac61-4f0e-ab13-2187265c9820">
+
+## f) Kerää teknistä tietoa orjista verkon yli (grains.item)
 
 
 
