@@ -79,7 +79,7 @@ SSH-yhteyden luomisen jälkeen hyväksyin orjien avaimet komennolla ``$ sudo sal
 <img width="418" alt="Näyttökuva 2023-11-06 115332" src="https://github.com/esskra/palvelinten_hallinta/assets/148875302/9f31af0f-a018-4e60-97ee-16d9bcc4d802">
 
 ## e) Aja useita idempotentteja (state.single) komentoja verkon yli.
-Lähdin testaamaan idempotenttia asentamalla Apache2:n komennolla ``$ sudo salt '*' state.single pkg.installed apache2``. Alla olevan kuvan yläreunasta näkyy yhteenveto t001 koneelle ja alhaalla t002 koneen asennustapahtuman alku. Kuvasta näkyy, että asennus onnistui (Changed: 1), koska Apache2-palvelua ei löytynyt koneilta.
+Lähdin testaamaan idempotenttia asentamalla Apache2:n komennolla ``$ sudo salt '*' state.single pkg.installed apache2``. Alla olevan kuvan yläreunasta näkyy yhteenveto t001 koneelle ja alhaalla t002 koneen asennustapahtuman alku. Kuvasta näkyy, että asennus onnistui (Changed=1), koska Apache2-palvelua ei löytynyt koneilta.
 
 <img width="429" alt="Näyttökuva 2023-11-06 121525" src="https://github.com/esskra/palvelinten_hallinta/assets/148875302/3ddfb8ee-2ae1-44d6-b1b4-b75fe4efcd5b">
 
