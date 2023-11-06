@@ -119,18 +119,21 @@ Päättelin, että tiedoston ajamalla se luo uuden tiedoston <i>infra-as-code</i
 
 <img width="371" alt="Näyttökuva 2023-11-06 131327" src="https://github.com/esskra/palvelinten_hallinta/assets/148875302/386b8e02-0b3a-466f-a57d-c5c838a49832">
 
-Käytin komentoa ``$ sudo salt '*' cmd.run 'ls /tmp/'`` testatakseni, että komento oli tehnyt pyytämäni muutokset. Alla olevassa kuvassa voi nähdä, että komento toimi ja <i>infra-as-code</i>-tiedosto löytyi molemmilta orjilta. Rehellisyyden nimissä tehtävä ei vielä täysin auennut itselleni, vaikka ohjeita noudattamalla sain sen onnistumaan. Toistojen kautta kuitenkin hyvä tulee!
+Käytin komentoa ``$ sudo salt '*' cmd.run 'ls /tmp/'`` testatakseni, että komento oli tehnyt pyytämäni muutokset. Alla olevassa kuvassa voi nähdä, että komento toimi ja <i>infra-as-code</i>-tiedosto löytyi molemmilta orjilta. 
 
 <img width="394" alt="Näyttökuva 2023-11-06 132434" src="https://github.com/esskra/palvelinten_hallinta/assets/148875302/a84c4440-8221-4d05-b9d7-0e1270d2f7a6">
 
+Rehellisyyden nimissä tehtävä ei vielä täysin auennut itselleni, vaikka ohjeita noudattamalla sain sen onnistumaan. Toistojen kautta kuitenkin ymmärrys kasvaa!
+
 ## Lähteet:
-- https://developer.hashicorp.com/vagrant/downloads
-- https://devops.stackexchange.com/questions/653/what-is-the-definition-of-cattle-not-pets#654
-- https://docs.saltproject.io/salt/install-guide/en/latest/topics/install-by-operating-system/ubuntu.html
-- https://terokarvinen.com/2023/salt-vagrant/
-- https://terokarvinen.com/2017/04/11/vagrant-revisited-install-boot-new-virtual-machine-in-31-seconds/
-- https://terokarvinen.com/2023/configuration-management-2023-autumn/
-- https://developer.hashicorp.com/vagrant/docs/vagrantfile
+
+- HashiCorp, Install Vagrant. Luettavissa: https://developer.hashicorp.com/vagrant/downloads Luettu: 5.11.2023
+- What is the definition of "cattle not pets"?. Luettavissa: https://devops.stackexchange.com/questions/653/what-is-the-  definition-of-cattle-not-pets#654 Luettu: 5.11.2023
+- Salt Project: Ubuntu. Luettavissa: https://docs.saltproject.io/salt/install-guide/en/latest/topics/install-by-operating-system/ubuntu.html Luettu: 5.11.2023
+- Karvinen, T. 2023. Salt Vagrant - automatically provision one master and two slaves. Luettavissa: https://terokarvinen.com/2023/salt-vagrant/ Luettu 5.11.2023
+- Karvinen, T. 2017. Vagrant Revisited – Install & Boot New Virtual Machine in 31 seconds. Luettavissa: https://terokarvinen.com/2017/04/11/vagrant-revisited-install-boot-new-virtual-machine-in-31-seconds/ Luettu: 5.11.2023
+- Karvinen, T. 2023. Infra as Code, H2 Karjaa. Luettavissa: https://terokarvinen.com/2023/configuration-management-2023-autumn/ Luettu: 5.11.2023
+  
 
 
 
