@@ -55,6 +55,7 @@ Asennuksen jälkeen tarkistin että asennetut palvelut ovat toivotusti päällä
 
 <img width="456" alt="Näyttökuva 2023-11-06 022737" src="https://github.com/esskra/palvelinten_hallinta/assets/148875302/33100d8a-7a5a-4c84-bdd1-e6463d1a41b9">
 
+<br>
 <img width="459" alt="Näyttökuva 2023-11-06 022806" src="https://github.com/esskra/palvelinten_hallinta/assets/148875302/dc04a527-cfc5-4603-a35b-d612ec4cbfe5">
 
 
