@@ -51,6 +51,9 @@ Testasin vielä nettiyhteyden toimivuuden komennolla ``$ ping 8.8.8.8`` ja kuten
 
 ## c) Oma orjansa.
 
+
+
+
 ## Lähteet:
 https://developer.hashicorp.com/vagrant/downloads
 
