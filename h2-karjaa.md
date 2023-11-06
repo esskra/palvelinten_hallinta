@@ -59,6 +59,9 @@ Komento toimi ja kertoi molempien palveluiden olevan päällä.
 <br>
 <img width="459" alt="Näyttökuva 2023-11-06 022806" src="https://github.com/esskra/palvelinten_hallinta/assets/148875302/dc04a527-cfc5-4603-a35b-d612ec4cbfe5">
 
+## d) Asenna Saltin herra-orja arkkitehtuuri toimimaan verkon yli. 
+
+
 
 
 ## Lähteet:
