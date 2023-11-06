@@ -44,7 +44,10 @@ Tarkistin myös, että virtuaalikone oli automaattisesti luotu VirtualBoxiin. Al
 
 <img width="960" alt="Näyttökuva 2023-11-06 014007" src="https://github.com/esskra/palvelinten_hallinta/assets/148875302/b9578dae-193d-4926-9227-3fad00422998">
 
-Lopuksi poistuin koneesta ``exit``-komennolla, ja poistin koneen komennolla ``$ vagrant destroy``. 
+<img width="465" alt="Näyttökuva 2023-11-06 021101" src="https://github.com/esskra/palvelinten_hallinta/assets/148875302/fa9b372c-f089-495a-905d-f70b94f582ca">
+
+
+Testasin vielä nettiyhteyden toimivuuden komennolla ``$ ping 8.8.8.8`` ja kuten kuvasta näkyy, nettiyhteys toimii. Lopuksi poistuin koneesta ``exit``-komennolla, ja poistin koneen komennolla ``$ vagrant destroy``. 
 
 ## c) Oma orjansa.
 
