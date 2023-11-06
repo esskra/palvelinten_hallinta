@@ -50,8 +50,9 @@ Tarkistin myös, että virtuaalikone oli automaattisesti luotu VirtualBoxiin. Al
 Testasin vielä nettiyhteyden toimivuuden komennolla ``$ ping 8.8.8.8`` ja kuten kuvasta näkyy, nettiyhteys toimii. Lopuksi poistuin koneesta ``exit``-komennolla, ja poistin koneen komennolla ``$ vagrant destroy``. 
 
 ## c) Oma orjansa.
-Loin uuden koneen samalla tavalla kuin edellisessä tehtävässä ja SSH-yhteyden luomisen jälkeen asensin herran komennolla ``$ sudo apt-get install salt-master`` ja orjan komennolla  ``$ sudo apt-get install salt-minion``. 
-Asennuksen jälkeen tarkistin että asennetut palvelut ovat toivotusti päällä komennolla ``$ sudo systemctl status salt-master`` ja ``$ sudo systemctl status salt-minion``. En ollut täysin varma komennon toimivuudesta, mutta muistan käyttäneeni niitä tarkistaakseni, onko Apache2 päällä, joten laitoin komennon myös tässä tapauksessa testiin. Komento toimi ja kertoi molempien palveluiden olevan päällä.
+Loin uuden koneen samalla tavalla kuin edellisessä tehtävässä, ja SSH-yhteyden luomisen jälkeen asensin herran komennolla ``$ sudo apt-get install salt-master`` ja orjan komennolla  ``$ sudo apt-get install salt-minion``. 
+Asennuksen jälkeen tarkistin että asennetut palvelut ovat toivotusti päällä komennolla ``$ sudo systemctl status salt-master`` ja ``$ sudo systemctl status salt-minion``. En ollut täysin varma komennon toimivuudesta, mutta muistan käyttäneeni niitä tarkistaakseni, onko Apache2 päällä, joten laitoin komennon myös tässä tapauksessa testiin. 
+Komento toimi ja kertoi molempien palveluiden olevan päällä.
 
 <img width="456" alt="Näyttökuva 2023-11-06 022737" src="https://github.com/esskra/palvelinten_hallinta/assets/148875302/33100d8a-7a5a-4c84-bdd1-e6463d1a41b9">
 
