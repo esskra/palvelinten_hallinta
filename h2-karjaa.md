@@ -108,8 +108,11 @@ Lähdin keräämään tietoa koneista komennolla ``$ sudo salt '*' grains.items`
 Käytin komentoa ``$ sudo salt '*' cmd.run 'ls -la'`` joka antaa tutun ls -la-listauksen. Kokeilin myös komentoa ``$ sudo salt '*' cmd.run 'ls -la /'``, joka listaa koneiden root-hakemiston sisällön.
 
 <img width="299" alt="Näyttökuva 2023-11-06 125118" src="https://github.com/esskra/palvelinten_hallinta/assets/148875302/db52ee4f-c5df-4a55-b33b-48507865dfa8">
-
+<br>
 <img width="349" alt="Näyttökuva 2023-11-06 125248" src="https://github.com/esskra/palvelinten_hallinta/assets/148875302/e308bf76-752d-4e0d-bff6-606720c2e142">
+
+## h) Hello, IaC
+
 
 
 
