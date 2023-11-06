@@ -1,4 +1,4 @@
-<img width="406" alt="image" src="https://github.com/esskra/palvelinten_hallinta/assets/148875302/80c9aa04-f138-4327-9135-111d9dee2b8a"># h2 Karjaa
+# h2 Karjaa
 ## x) Lue ja tiivistä.
 
 <b>Slater 2017: [What is the definition of "cattle not pets"?](https://devops.stackexchange.com/questions/653/what-is-the-definition-of-cattle-not-pets#654)</b>
