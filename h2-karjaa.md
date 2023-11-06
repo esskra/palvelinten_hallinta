@@ -115,11 +115,13 @@ Käytin komentoa ``$ sudo salt '*' cmd.run 'ls -la'`` joka antaa tutun ls -la-li
 Tämä tehtävä vaikutti heti melko monimutkaiselta, joten noudatin tässä vaihe vaiheelta Tero Karvisen <i>"Salt Vagrant</i>-artikkelin kohtaa <i>Infra as Code - Your wishes as a text file</i>. Aloitin luomalla kansion hello /srv/salt-hakemistoon komennolla ``$ sudo mkdir -p /srv/salt/hello``. Tämän jälkeen loin ``$ sudoedit /srv/salt/hello/init.sls``-komennolla tiedoston init.sls ja lisäsin siihen Nanossa ohjeen mukaisesti tekstin:
 "/tmp/infra-as-code:
   file.managed".
-Päättelin, että tiedoston ajamalla se luo uuden tiedoston <i>infra-as-code</i> /tmp/-kansioon. Ohjeen mukaan testasin tiedoston toimivuutta komennolla ``$ sudo salt '*' state.apply hello``, vaikka rehellisyyden nimissä en ymmärtänyt komentoa, sillä se tuntui itselleni epäloogiselta "hello"-kohdan takia. Komento kuitenkin toimi niin kuin piti, ja se loi uuden tiedoston <i>infra-as-code</i>.
+Päättelin, että tiedoston ajamalla se luo uuden tiedoston <i>infra-as-code</i> /tmp/-kansioon. Ohjeen mukaan testasin tiedoston toimivuutta komennolla ``$ sudo salt '*' state.apply hello``, ja se loi uuden tiedoston <i>infra-as-code</i>.
 
 <img width="371" alt="Näyttökuva 2023-11-06 131327" src="https://github.com/esskra/palvelinten_hallinta/assets/148875302/386b8e02-0b3a-466f-a57d-c5c838a49832">
 
+Käytin komentoa ``$ sudo salt '*' cmd.run 'ls /tmp/'`` testatakseni, että komento oli tehnyt pyytämäni muutokset. Alla olevassa kuvassa voi nähdä, että komento toimi ja <i>infra-as-code</i>-tiedosto löytyi molemmilta orjilta. Rehellisyyden nimissä tehtävä ei vielä täysin auennut itselleni, vaikka ohjeita noudattamalla sain sen onnistumaan. Toistojen kautta kuitenkin hyvä tulee!
 
+<img width="394" alt="Näyttökuva 2023-11-06 132434" src="https://github.com/esskra/palvelinten_hallinta/assets/148875302/a84c4440-8221-4d05-b9d7-0e1270d2f7a6">
 
 ## Lähteet:
 - https://developer.hashicorp.com/vagrant/downloads
