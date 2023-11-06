@@ -64,8 +64,13 @@ Komento toimi ja kertoi molempien palveluiden olevan päällä.
 
 
 
+
 ## Lähteet:
 https://developer.hashicorp.com/vagrant/downloads
 https://docs.saltproject.io/salt/install-guide/en/latest/topics/install-by-operating-system/ubuntu.html
+https://terokarvinen.com/2023/salt-vagrant/
+https://terokarvinen.com/2017/04/11/vagrant-revisited-install-boot-new-virtual-machine-in-31-seconds/
+https://terokarvinen.com/2023/configuration-management-2023-autumn/
+
 
 
