@@ -91,15 +91,26 @@ Asennuksen jälkeen lähdin testaamaan toimiiko Apache2 odotetusti komennolla ``
 
 <img width="402" alt="Näyttökuva 2023-11-06 122435" src="https://github.com/esskra/palvelinten_hallinta/assets/148875302/65833342-e3ea-474f-9b02-76d9a3cc9a43">
 
-Apache2 toimi toivotulla tavalla, joten seuraavaksi ajoin komennon ``$ sudo salt '*' state.single service.dead apache2`` sammuttaakseni palvelun. Alla olevasta kuvasta näkee, että Apache2 oli onnistuneesti "tapettu".
+Apache2 toimi toivotulla tavalla, joten seuraavaksi ajoin komennon ``$ sudo salt '*' state.single service.dead apache2`` sammuttaakseni palvelun. Alla olevasta kuvasta näkee, että Apache2 oli onnistuneesti "tapettu". (changed=1)
 
 <img width="441" alt="Näyttökuva 2023-11-06 122724" src="https://github.com/esskra/palvelinten_hallinta/assets/148875302/30d553b0-2096-47ff-9970-54691124642f">
 
-Ajoin taas komennon uudestaan luodakseni idempotentin, ja tuloste kertoo että Apache2 on jo "kuollut". Muutoksia ei siis tapahdu.
+Ajoin taas komennon uudestaan luodakseni idempotentin, ja tuloste kertoo että Apache2 on jo "kuollut". Komento on siis ajettu onnistuneesti, mutta muutoksia ei tapahdu.
 
 <img width="400" alt="Näyttökuva 2023-11-06 122820" src="https://github.com/esskra/palvelinten_hallinta/assets/148875302/0efbfed0-ac61-4f0e-ab13-2187265c9820">
 
 ## f) Kerää teknistä tietoa orjista verkon yli (grains.item)
+Lähdin keräämään tietoa koneista komennolla ``$ sudo salt '*' grains.items``, joka onkin jo tuttu H1 Viisikko-tehtävästä. Komento antaa taas pitkän listan tietoa molemmista koneista. Halusin selvittää koneiden IP-osoitteet, joten ajoin komennon ``$ sudo salt '*' grains.item osfinger ipv4`` ja saan tulokseksi tarkat tiedot molempien koneiden IPv4 osoitteista. Tulosteesta voi huomata, että t002-orjan IP on 192.168.12.102 ja t001-orjan IP on 192.168.12.100.
+
+<img width="307" alt="Näyttökuva 2023-11-06 124021" src="https://github.com/esskra/palvelinten_hallinta/assets/148875302/38d55406-e3fb-4d04-9dba-5c9ec1dc4882">
+
+## g) Aja shell-komento orjalla verkon yli.
+Käytin komentoa ``$ sudo salt '*' cmd.run 'ls -la'`` joka antaa tutun ls -la-listauksen. Kokeilin myös komentoa ``$ sudo salt '*' cmd.run 'ls -la /'``, joka listaa koneiden root-hakemiston sisällön.
+
+<img width="299" alt="Näyttökuva 2023-11-06 125118" src="https://github.com/esskra/palvelinten_hallinta/assets/148875302/db52ee4f-c5df-4a55-b33b-48507865dfa8">
+
+<img width="349" alt="Näyttökuva 2023-11-06 125248" src="https://github.com/esskra/palvelinten_hallinta/assets/148875302/e308bf76-752d-4e0d-bff6-606720c2e142">
+
 
 
 
