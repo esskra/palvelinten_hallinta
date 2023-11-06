@@ -60,19 +60,38 @@ Komento toimi ja kertoi molempien palveluiden olevan päällä.
 <img width="459" alt="Näyttökuva 2023-11-06 022806" src="https://github.com/esskra/palvelinten_hallinta/assets/148875302/dc04a527-cfc5-4603-a35b-d612ec4cbfe5">
 
 ## d) Asenna Saltin herra-orja arkkitehtuuri toimimaan verkon yli. 
+Aloitin tehtävän luomalla uuden hakemiston <i>essi_vagrant</i>, ja loin sille uuden koneen. Avasin Vagrantfilen muistiossa ja muutin sen sisällön kopioimlla siihen Tero Karvisen valmiiksi luoman Vagrantfilen joka löytyy [täältä](https://terokarvinen.com/2023/salt-vagrant/). 
+
+<img width="404" alt="Näyttökuva 2023-11-06 105939" src="https://github.com/esskra/palvelinten_hallinta/assets/148875302/941b7a56-cd33-4d01-a8bc-c5e553f533d7">
+
+Vagrantfile kertoo mitä koneita halutaan luoda ja kuinka monta. Karvisen valmiissa Vagrantfilessä oli siis käytössä Debian ja orjakoneita kaksi. Tämän jälkeen kone käyttöön komennolla ``$ vagrant up``. Tässä meni melko kauan, noin 5 minuuttia. Varmistin vielä, että VirtualBoxiin oli ilmestynyt yksi herra ja kaksi orjaa.
+
+<img width="855" alt="Näyttökuva 2023-11-06 114300" src="https://github.com/esskra/palvelinten_hallinta/assets/148875302/2ed9785d-7163-4e5f-99b4-4c5e4098b9f0">
+
+<img width="323" alt="Näyttökuva 2023-11-06 115211" src="https://github.com/esskra/palvelinten_hallinta/assets/148875302/dd3556b5-1c23-4e91-9f83-fc2610811828">
+
+Tämän jälkeen loin SSH-yhteyden herraan komennolla ``$ vagrant ssh tmaster``.
+
+<img width="496" alt="Näyttökuva 2023-11-06 115153" src="https://github.com/esskra/palvelinten_hallinta/assets/148875302/b879ba66-bd7a-484f-81b0-0860f9fe1fdc">
+
+SSH-yhteyden luomisen jälkeen hyväksyin orjien avaimet komennolla ``$ sudo salt-key -A`` ja testasin yhteyden toimivuuden ohjeiden mukaisesti komennolla ``$ sudo salt '*' test.ping``. Molemmat orjat vastaavat pingiin true, joten yhteys toimii onnistuneesti. 
+
+<img width="418" alt="Näyttökuva 2023-11-06 115332" src="https://github.com/esskra/palvelinten_hallinta/assets/148875302/9f31af0f-a018-4e60-97ee-16d9bcc4d802">
+
+## e) Aja useita idempotentteja (state.single) komentoja verkon yli.
 
 
 
 
 
 ## Lähteet:
-https://developer.hashicorp.com/vagrant/downloads
-https://devops.stackexchange.com/questions/653/what-is-the-definition-of-cattle-not-pets#654
-https://docs.saltproject.io/salt/install-guide/en/latest/topics/install-by-operating-system/ubuntu.html
-https://terokarvinen.com/2023/salt-vagrant/
-https://terokarvinen.com/2017/04/11/vagrant-revisited-install-boot-new-virtual-machine-in-31-seconds/
-https://terokarvinen.com/2023/configuration-management-2023-autumn/
-https://developer.hashicorp.com/vagrant/docs/vagrantfile
+- https://developer.hashicorp.com/vagrant/downloads
+- https://devops.stackexchange.com/questions/653/what-is-the-definition-of-cattle-not-pets#654
+- https://docs.saltproject.io/salt/install-guide/en/latest/topics/install-by-operating-system/ubuntu.html
+- https://terokarvinen.com/2023/salt-vagrant/
+- https://terokarvinen.com/2017/04/11/vagrant-revisited-install-boot-new-virtual-machine-in-31-seconds/
+- https://terokarvinen.com/2023/configuration-management-2023-autumn/
+- https://developer.hashicorp.com/vagrant/docs/vagrantfile
 
 
 
