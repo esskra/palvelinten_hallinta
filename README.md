@@ -1,2 +1,2 @@
 # palvelinten_hallinta
-Homework
+Tehtävät Palvelinten hallinta-kurssille. Syksy 2023
