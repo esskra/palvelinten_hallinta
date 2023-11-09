@@ -43,6 +43,28 @@ Gitin asensin terminaalissa komennolla ``$ sudo apt-get install git``. Varmistin
 
 ![image](https://github.com/esskra/palvelinten_hallinta/assets/148875302/a4420f3b-c742-4bdd-a88c-8bb486316851)
 
+Asennuksen jälkeen lähdin luomaan ``$ SSH-keygen``-komennolla tarvittavia SSH-avaimia. Komento luo sekä julkisen että yksityisen avaimen, joista julkinen lisätään GitHubin asetuksista käyttäjälle. 
+
+![image](https://github.com/esskra/palvelinten_hallinta/assets/148875302/27b28cad-6dc1-4759-9358-656d7cff296f)
+
+Tulosteesta näkee, että avaimet ovat lisätty .ssh-hakemistoon. Siirryin hakemistoon, ja tulostin julkisen avaimen sisältävän <i>id_rsa.pub</i>-tiedoston sisällön. Kopioin avaimen ja lisäsin sen profiilini SSH-avaimeksi Githubista valitsemalla <b>Settings</b> > <b>SSH and GPG keys</b> > <b>New SSH key</b>. 
+
+![image](https://github.com/esskra/palvelinten_hallinta/assets/148875302/f637f112-c12b-46cb-a774-cdbe18f7c030)
+
+Lisättyäni SSH-avaimen profiiliini, palasin takaisin terminaalin puolelle, jossa muodostin yhteyden komennolla ``$ SSH -T git@github.com``. Muodostettuani yhteyden kloonasin <i>wintergit</i>-varaston virtuaalikoneelleni komennolla ``$ git clone git@github.com:esskra/wintergit.git``. Varaston osoite pysyi luonnollisesti samana, kuin tehtävän b-osiossa.
+
+![image](https://github.com/esskra/palvelinten_hallinta/assets/148875302/f53953ce-b42c-4b44-8742-3e8a786e341d)
+
+![image](https://github.com/esskra/palvelinten_hallinta/assets/148875302/89f2a8ea-f012-4790-8497-b38df9ee7ca9)
+
+Kloonattuani varaston siirryin <i>wintergit</i>-hakemistoon, ja tarkistin vielä, että aikaisemmin luodut tiedostot näkyivät hakemistossa. 
+
+![image](https://github.com/esskra/palvelinten_hallinta/assets/148875302/f20db2c7-eb3e-4132-ac7b-8dbc9f68aa6f)
+
+Varmistettuani, että kloonaus oli sujunut odotetusti, aloitin uuden tiedoston luomisen. Uusi tiedosto olisi tarkoitus  pushata Githubiin terminaalin kautta. Loin uuden tiedoston komennolla ``$ nano debianwintertest.md``. Alla olevassa kuvassa tiedoston sisältö.
+
+![image](https://github.com/esskra/palvelinten_hallinta/assets/148875302/6265886d-af67-48ac-a846-89947049e5af)
+
 
 
 
