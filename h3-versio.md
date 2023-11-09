@@ -1,10 +1,15 @@
 # h3 Versio
-Tehtävää varten latasin Git Bash ohjelmiston [täältä](https://gitforwindows.org/). Asensin ohjelmiston Windowsille sen oletusasetuksilla. 
+Tässä raportissa kerron vastaukseni Palvelinten Hallinta-kurssin tehtävään <i>h3 Versio</i>. Tehtävät ovat suoritettu omalla Windows-koneellani, ja sitä varten latasin Git Bash ohjelmiston [täältä](https://gitforwindows.org/). Asensin ohjelmiston Windowsille sen omilla oletusasetuksilla. 
 
 ## a) Online
-Loin Githubiin verkossa repositoryn <i>wintergit</i>. Loin repositorylle README.md-tiedoston sekä lisäsin sille GNU General Public License-lisenssin. Alla olevassa kuvassa uuden repositoryn sisältö, eli vain kaksi luomisvaiheessa tehtyä tiedostoa. 
+Tässä osiossa tarkoituksena oli luoda uusi repository, jota tarvitaan <i>h3 Versio</i>-tehtävän muissa osioissa. Uuden varaston luominen oli jo tuttua hommaa edellisistä tehtävistä. Loin Githubiin verkossa repositoryn <i>wintergit</i> tehtävänannon mukaisesti. Lisäsin repositorylle README.md-tiedoston sekä GNU General Public License v3.0-lisenssin. 
+
+<img width="411" alt="Näyttökuva 2023-11-09 174901" src="https://github.com/esskra/palvelinten_hallinta/assets/148875302/d6cca8d2-cfb0-4c96-abf9-a87897f27238">
+
 
 <img width="682" alt="Näyttökuva 2023-11-09 175022" src="https://github.com/esskra/palvelinten_hallinta/assets/148875302/7fc8e2e9-334d-4826-9660-aa48d13e7faa">
+
+Varaston luomisen jälkeen varmistin, että lisenssi ja README.md-tiedosto oli lisätty onnistuneesti. 
 
 ## b) Dolly
 Ensimmäisenä tarkistin Windowsin komentokehotteesta komennolla ``$ git -v``, että Git Bash-ohjelmisto oli asentunut oikein.
@@ -28,7 +33,7 @@ Lähdin tarkastelemaan lokia ja sen sisältöä ajamalla komennon ``$ git log``.
 
 <img width="489" alt="Näyttökuva 2023-11-09 180857" src="https://github.com/esskra/palvelinten_hallinta/assets/148875302/a4a06107-b750-407e-acb1-5364097021d2">
 
-Tulosteesta pystyi päätellä mitä muutoksia varastoon on tehty ja kuka muutokset on tehnyt. Päättelin myös, että varastoon verkossa tehdyt muutokset näkyy käyttäjänimeni <i>esskra</i> tekemiksi. Lähdin testaamaan, olinko päätellyt oikein luomalla verkossa <i>wintergit</i>-varastoon tiedoston githubfile.md. Tiedoston luomisen jälkeen ajoin uudestaan ``$ git log``-komennon
+Tuloste kertoi, mitä muutoksia varastoon on tehty ja kuka muutokset on tehnyt. Päättelin myös, että varastoon verkossa tehdyt muutokset näkyy käyttäjänimeni <i>esskra</i> tekemiksi. Lähdin testaamaan, olinko päätellyt oikein luomalla verkossa <i>wintergit</i>-varastoon tiedoston githubfile.md. Tiedoston luomisen jälkeen ajoin uudestaan ``$ git log``-komennon, ja pystyin todeta, että vain verkossa luomani tiedostot näkyvät lokissa käyttäjänimeni <i>esskra</i> alla.
 
-
+<img width="625" alt="Näyttökuva 2023-11-09 192323" src="https://github.com/esskra/palvelinten_hallinta/assets/148875302/4223ec37-1310-415c-a599-0e0c60b69237">
 
