@@ -1,5 +1,5 @@
 # h3 Versio
-Tässä raportissa kerron vastaukseni Palvelinten Hallinta-kurssin tehtävään <i>h3 Versio</i>. Tehtävät ovat suoritettu omalla Windows-koneellani, ja sitä varten latasin Git Bash ohjelmiston [täältä](https://gitforwindows.org/). Asensin ohjelmiston Windowsille sen omilla oletusasetuksilla. 
+Tässä raportissa kerron vastaukseni Palvelinten Hallinta-kurssin tehtävään h3 Versio. Tehtävät ovat suoritettu osiota <i>g) Se toinen järjestelmä</i> lukuunottamatta omalla Windows-koneellani, ja sitä varten latasin Git Bash ohjelmiston [täältä](https://gitforwindows.org/). Asensin ohjelmiston Windowsille sen omilla oletusasetuksilla. Viimeiseen osioon on käytetty aiemmin kurssilla asennettua Debian 12-virtuaalikonetta.
 
 ## a) Online
 Tässä osiossa tarkoituksena oli luoda uusi repository, jota tarvitaan <i>h3 Versio</i>-tehtävän muissa osioissa. Uuden varaston luominen oli jo tuttua hommaa edellisistä tehtävistä. Loin Githubiin verkossa repositoryn <i>wintergit</i> tehtävänannon mukaisesti. Lisäsin repositorylle README.md-tiedoston sekä GNU General Public License v3.0-lisenssin. 
@@ -36,4 +36,15 @@ Lähdin tarkastelemaan lokia ja sen sisältöä ajamalla komennon ``$ git log``.
 Tuloste kertoi, mitä muutoksia varastoon on tehty ja kuka muutokset on tehnyt. Päättelin myös, että varastoon verkossa tehdyt muutokset näkyy käyttäjänimeni <i>esskra</i> tekemiksi. Lähdin testaamaan, olinko päätellyt oikein luomalla verkossa <i>wintergit</i>-varastoon tiedoston githubfile.md. Tiedoston luomisen jälkeen ajoin uudestaan ``$ git log``-komennon, ja pystyin todeta, että vain verkossa luomani tiedostot näkyvät lokissa käyttäjänimeni <i>esskra</i> alla.
 
 <img width="625" alt="Näyttökuva 2023-11-09 192323" src="https://github.com/esskra/palvelinten_hallinta/assets/148875302/4223ec37-1310-415c-a599-0e0c60b69237">
+
+## g) Vapaaehtoinen: Se toinen järjestelmä
+Tämän osion suoritin aiemmin kurssilla asentamallani Debian 12-virtuaalikoneella. Aloitin avaamalla koneen VirtualBoxin kautta, ja kirjauduttuani koneelle sisään avasin terminaalin. Terminaalissa ajoin ensimmäisenä ``$ sudo apt-get update``-komennon päivittääkseni pakettivarastot, jonka jälkeen päivitin paketit ``$ sudo apt-get upgrade``-komennolla. 
+Gitin asensin terminaalissa komennolla ``$ sudo apt-get install git``. Varmistin vielä asennuksen onnistuneen komennolla ``$ git version``. Alla olevasta kuvasta näkyy, että asennettu versio on 2.39.2.
+
+![image](https://github.com/esskra/palvelinten_hallinta/assets/148875302/a4420f3b-c742-4bdd-a88c-8bb486316851)
+
+
+
+
+
 
