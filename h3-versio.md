@@ -15,11 +15,11 @@ Ensimmäisenä tarkistin Windowsin komentokehotteesta komennolla ``$ git -v``, e
 
 
 ## c) Doh! 
-Aloitin tehtävän muuttamalla README.md tiedoston sisältöä. Alla olevassa kuvassa näkyy tiedostolle tehdyt muutokset nano-tekstieditorilla. 
+Tässä tehtävässä tarkoituksena oli poistaa varastoon tehdyt muutokset ennen ``commit``-komennon ajamista. Aloitin tehtävän muuttamalla README.md tiedoston sisältöä. Alla olevassa kuvassa näkyy tiedostolle tehdyt muutokset nano-tekstieditorilla. 
 
 <img width="534" alt="Näyttökuva 2023-11-09 190001" src="https://github.com/esskra/palvelinten_hallinta/assets/148875302/085ae156-2703-41a0-9224-6132cd59bdba">
 
-Ajoin komennon ``$ git reset --hard`` kumotakseni tekemäni muutokset, ilman niiden julkaisemista Githubiin. Päättelin, että komennon tuloste kertoi, mikä oli kumoamisen jälkeen viimeisin tekemäni toimi. Tarkistin vielä komennon toimineen toivotulla tavalla tulostamalla tiedoston sisällön komennolla ``$ cat README.md``. Tuloste kertoi, että aiemmin tehdyt muutokset oli kumottu onnistuneesti.
+Ajoin komennon ``$ git reset --hard`` kumotakseni tekemäni muutokset, ilman niiden julkaisemista Githubiin. Päättelin, että komennon tuloste kertoi, mikä oli viimeisin tekemäni toimi, nyt kun edelliset muutokset oli kumottu. Tarkistin vielä komennon toimineen toivotulla tavalla tulostamalla tiedoston sisällön komennolla ``$ cat README.md``. Tuloste kertoi, että aiemmin tehdyt muutokset oli kumottu onnistuneesti.
 
 <img width="530" alt="1" src="https://github.com/esskra/palvelinten_hallinta/assets/148875302/f63ae9ba-fe93-428a-bc97-9dd512dec876">
 
