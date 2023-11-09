@@ -28,7 +28,7 @@ Lähdin tarkastelemaan lokia ja sen sisältöä ajamalla komennon ``$ git log``.
 
 <img width="489" alt="Näyttökuva 2023-11-09 180857" src="https://github.com/esskra/palvelinten_hallinta/assets/148875302/a4a06107-b750-407e-acb1-5364097021d2">
 
-Tulosteesta pystyi päätellä mitä muutoksia varastoon on tehnyt ja kuka muutokset on tehnyt. Päättelin myös, että varastoon verkossa tehdyt muutokset näkyy käyttäjänimeni <i>esskra</i> tekemiksi.
+Tulosteesta pystyi päätellä mitä muutoksia varastoon on tehnyt ja kuka muutokset on tehnyt. Päättelin myös, että varastoon verkossa tehdyt muutokset näkyy käyttäjänimeni <i>esskra</i> tekemiksi. Lähdin testaamaan, olinko päätellyt oikein luomalla verkossa <i>wintergit</i>-varastoon tiedoston githubfile.md. Tiedoston luomisen jälkeen ajoin uudestaan ``$ git log``-komennon
 
 
 
