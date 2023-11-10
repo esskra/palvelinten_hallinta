@@ -1,22 +1,26 @@
 # h3 Versio
-Tässä raportissa kerron vastaukseni Palvelinten Hallinta-kurssin tehtävään h3 Versio. Tehtävät ovat suoritettu osiota <br><i>g) Se toinen järjestelmä</i> lukuunottamatta omalla Windows-koneellani, ja sitä varten latasin Git Bash ohjelmiston [täältä](https://gitforwindows.org/). Asensin ohjelmiston Windowsille sen omilla oletusasetuksilla. Viimeiseen osioon on käytetty aiemmin kurssilla asennettua Debian 12-virtuaalikonetta. 
+Tässä raportissa kerron vastaukseni Palvelinten Hallinta-kurssin tehtävään h3 Versio. Tehtävät ovat suoritettu osiota <br><i>g) Se toinen järjestelmä</i> lukuunottamatta omalla Windows-koneellani, ja sitä varten latasin Git Bash ohjelmiston [täältä](https://gitforwindows.org/). Asensin ohjelmiston Windowsille sen omilla oletusasetuksilla. Viimeiseen osioon on käytetty aiemmin kurssilla asennettua Debian 12-virtuaalikonetta. Tehtävät ovat suoritettu osittain yhdessä [Thomas Helmisen](https://github.com/ThomasHelminen) sekä [Joonas Hautaviidan](https://github.com/hautadata) kanssa.
 
 ## a) Online
 Tässä osiossa tarkoituksena oli luoda uusi repository, jota tarvitaan <i>h3 Versio</i>-tehtävän muissa osioissa. Uuden varaston luominen oli jo tuttua hommaa edellisistä tehtävistä. Loin Githubiin verkossa repositoryn <i>wintergit</i> tehtävänannon mukaisesti. Lisäsin repositorylle README.md-tiedoston sekä GNU General Public License v3.0-lisenssin. 
 
 <img width="411" alt="Näyttökuva 2023-11-09 174901" src="https://github.com/esskra/palvelinten_hallinta/assets/148875302/d6cca8d2-cfb0-4c96-abf9-a87897f27238">
 
-
 <img width="682" alt="Näyttökuva 2023-11-09 175022" src="https://github.com/esskra/palvelinten_hallinta/assets/148875302/7fc8e2e9-334d-4826-9660-aa48d13e7faa">
 
 Varaston luomisen jälkeen varmistin, että lisenssi ja README.md-tiedosto oli lisätty onnistuneesti. 
 
 ## b) Dolly
-Ensimmäisenä tarkistin Windowsin komentokehotteesta komennolla ``$ git -v``, että Git Bash-ohjelmisto oli asentunut oikein.
+Tässä osiossa tarkoituksena oli kloonata edellisessä harjoituksessa tehty varasto sekä tehdä sille muutoksia terminaalin kautta ja pushata muutokset Githubiin. 
+Esimmäisenä tarkistin Windowsin komentokehotteesta komennolla ``$ git -v``, että Git Bash-ohjelmisto oli asentunut oikein, jotta voisin aloittaa harjoituksen suorittamisen.
 
 <img width="198" alt="Näyttökuva 2023-11-09 183332" src="https://github.com/esskra/palvelinten_hallinta/assets/148875302/ae1ed558-bdf7-40b2-9e87-4f8c324262fb">
 
+Tarkastettuani, että Git Bash oli asentunut oikein, siirryin Githubiin kopioimaan <i>wintergit</i>-varastoni SSH-osoitetta. Linkkiä kopioidessani muistin kuitenkin, että en ollut vielä luonut tarvittavia avaimia harjoitusta varten, sillä Github kertoi, ettei profiilissani ollut vielä yhtäkään julkista SSH-avainta. 
 
+![image](https://github.com/esskra/palvelinten_hallinta/assets/148875302/04f46cea-3e06-4946-9244-352b4d0df2f1)
+
+Siirryin Git Bashiin luomaan 
 
 
 
@@ -81,6 +85,9 @@ Tiedoston luomisen jälkeen lähdin testaamaan, saanko pushattua tiedoston Githu
 Siirryin Githubiin tarkistamaan, oliko komento toiminut odotetulla tavalla. <i>Wintergit</i>-hakemistoon oli ilmestynyt aikaisemmin luomani debianwintertest.md, eli tiedoston luominen ja pushaaminen oli onnistunut.
 
 ![image](https://github.com/esskra/palvelinten_hallinta/assets/148875302/d56e6d9d-5999-466b-a02d-05a651f6888d)
+
+# Lähteet
+
 
 
 
