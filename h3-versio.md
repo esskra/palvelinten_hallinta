@@ -11,8 +11,8 @@ Tässä osiossa tarkoituksena oli luoda uusi repository, jota tarvitaan <i>h3 Ve
 Varaston luomisen jälkeen varmistin, että lisenssi ja README.md-tiedosto oli lisätty onnistuneesti. 
 
 ## b) Dolly
-Tässä osiossa tarkoituksena oli kloonata edellisessä harjoituksessa tehty varasto sekä tehdä sille muutoksia terminaalin kautta ja pushata muutokset Githubiin. 
-Esimmäisenä tarkistin Windowsin komentokehotteesta komennolla ``$ git -v``, että Git Bash-ohjelmisto oli asentunut oikein, jotta voisin aloittaa harjoituksen suorittamisen.
+Tässä osiossa tarkoituksena oli kloonata edellisessä harjoituksessa tehty varasto, tehdä sille muutoksia terminaalin kautta ja pushata muutokset Githubiin. Harjoituksen tekeminen oli melko hidasta ja tietoa joutui etsimään runsaasti verkosta, sillä minulla ei ollut lainkaan kokemusta Githubista tai Gitistä ennen kurssin alkua.
+Esimmäisenä tarkistin Windowsin komentokehotteesta komennolla ``$ git -v``, että Git Bash-ohjelmisto oli asentunut oikein, jotta voisin aloittaa harjoituksen suorittamisen. Asennus oli onnistunut ja asennettu versio oli 2.42.0.windows.2. 
 
 <img width="198" alt="Näyttökuva 2023-11-09 183332" src="https://github.com/esskra/palvelinten_hallinta/assets/148875302/ae1ed558-bdf7-40b2-9e87-4f8c324262fb">
 
@@ -20,10 +20,19 @@ Tarkastettuani, että Git Bash oli asentunut oikein, siirryin Githubiin kopioima
 
 <img width="297" alt="Näyttökuva 2023-11-08 185828" src="https://github.com/esskra/palvelinten_hallinta/assets/148875302/a1d911d0-39a9-4740-8851-bdaadad92dd6">
 
+Siirryin Git Bashiin luomaan avainta. Käytin komentoa ``$ ssh keygen`` avaimen luomiseen. Komennon tarkoitus olisi luoda sekä julkisen että ksityinen avain. Julkinen avain tulisi lisätä Githubin kautta profiiliini, jotta SSH-yhteyden luominen onnistuisi.
 
-Siirryin Git Bashiin luomaan 
+<img width="512" alt="Näyttökuva 2023-11-09 141847" src="https://github.com/esskra/palvelinten_hallinta/assets/148875302/d4048109-6f18-40d4-b366-767d5ca5081a">
 
+Komennon ajettuani tarkistin, että avaimet sisältävät tiedostot oli luotu .ssh-hakemistooni. Tiedostot oli luotu onnistuneesti, joten ajoin terminaalissa komennon ``$ cat id_rsa.pub`` tulostaakseni tiedoston sisällön. Kopioin tiedoston sisältämän julkisen avaimen ja siirryin selaimessa Githubiin, josta lisäsin avaimen profiiliini <b>Settings</b> > <b>SSH and GPG keys</b> > <b>New SSH key</b> kautta. 
 
+<img width="493" alt="Näyttökuva 2023-11-09 183817" src="https://github.com/esskra/palvelinten_hallinta/assets/148875302/f474bd35-7906-43ac-9341-5fea83dcf539">
+
+<img width="515" alt="Näyttökuva 2023-11-09 142735" src="https://github.com/esskra/palvelinten_hallinta/assets/148875302/acb8c0e2-01af-486c-bb70-ea0fd2ab1bf8">
+
+Lisättyäni avaimen profiiliini pääsin luomaan SSH-yhteyttä Git Bashissa. SSH-yhteyttä varten käytin komentoa ``$ ssh -T git@github``. ``$ man ssh``-komento kertoo, että komennon T- tarkoittaa "Disable pseudo-terminal allocation.". Se siis estää terminaalia yrittämästä avata SSH-yhteyden kanssa terminaalia, koska Githubilla ei sitä ole. SSH-yhteyden luomisen jälkeen pysyn siis oman koneeni terminaalin sisällä. Komento toimi toivotulla tavalla, ja tuloste kertoi että olin päässyt sisään käyttäjälleni <i>esskra</i>
+
+<img width="489" alt="Näyttökuva 2023-11-09 175158" src="https://github.com/esskra/palvelinten_hallinta/assets/148875302/7007ef72-afdd-444d-8821-e55ee84990e6">
 
 
 
@@ -75,7 +84,8 @@ Varmistettuani, että kloonaus oli sujunut odotetusti, aloitin uuden tiedoston l
 
 <img width="431" alt="Näyttökuva 2023-11-09 215755" src="https://github.com/esskra/palvelinten_hallinta/assets/148875302/03d07a7e-6fcf-41be-80ed-20630b1486ab">
 
-Tiedoston luomisen jälkeen lähdin testaamaan, saanko pushattua tiedoston Githubiin. Käytin komentoja ``$ git init`` <br> ``$ git add .`` ja ``$ git commit -m``. Komento configuroi nimen ja sähköpostin automaattisesti, koska käytin samaa konetta kuin aikaisemmin tehdessäni harjoitusta Windowsilla. Lopuksi pushasin tiedoston Githubiin komennolla ``$ git push``.
+Tiedoston luomisen jälkeen lähdin testaamaan, saanko pushattua tiedoston Githubiin. Käytin komentoja ``$ git init`` <br> ``$ git add .`` ja ``$ git commit -m``. Komento configuroi nimen ja sähköpostin automaattisesti, koska käytin samaa konetta kuin aikaisemmin tehdessäni harjoitusta Windowsilla. Lopuksi pushasin tiedoston Githubiin komennolla <br>
+``$ git push``.
 
 <img width="486" alt="Näyttökuva 2023-11-09 215837" src="https://github.com/esskra/palvelinten_hallinta/assets/148875302/5442998b-31d2-44d3-9747-69ceabc48185">
 
