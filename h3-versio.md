@@ -21,7 +21,9 @@ Tarkastettuani, että Git Bash oli asentunut oikein, siirryin Githubiin kopioima
 
 <img width="297" alt="Näyttökuva 2023-11-08 185828" src="https://github.com/esskra/palvelinten_hallinta/assets/148875302/a1d911d0-39a9-4740-8851-bdaadad92dd6">
 
-Siirryin Git Bashiin luomaan avainta. Käytin komentoa ``$ ssh keygen`` avaimen luomiseen. Komennon tarkoitus olisi luoda sekä julkisen että yksityinen avain. Julkinen avain tulisi lisätä Githubin kautta profiiliini, jotta SSH-yhteyden luominen onnistuisi.
+ssh-keygen -o -t rsa -C "windows-ssh@github" , jossa -o tarkoittaa OpenSSH-formaattia, -t RSA/SHA256-avaintyypin valintaa ja -C on kommentti
+
+Siirryin Git Bashiin luomaan avainta. Käytin komentoa ``$ ssh keygen -o -t rsa -C`` avaimen luomiseen. Komennon tarkoitus olisi luoda sekä julkisen että yksityinen avain. Julkinen avain tulisi lisätä Githubin kautta profiiliini, jotta SSH-yhteyden luominen onnistuisi. Komennossa -o tarkoittaa formaatin olevan OpenSSH, -t avaintyypin valintaa ja -C kommenttia. En ollut itse tässä vaiheessa täysin varma, tarvitseeko komento erikseen parametrejä, vai voiko avaimen luoda pelkällä ``$ ssh keygen``- komennolla. 
 
 <img width="512" alt="Näyttökuva 2023-11-09 141847" src="https://github.com/esskra/palvelinten_hallinta/assets/148875302/d4048109-6f18-40d4-b366-767d5ca5081a">
 
