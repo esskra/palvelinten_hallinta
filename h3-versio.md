@@ -57,7 +57,7 @@ Asennuksen jälkeen lähdin luomaan ``$ SSH-keygen``-komennolla tarvittavia SSH-
 
 <img width="468" alt="Näyttökuva 2023-11-09 215238" src="https://github.com/esskra/palvelinten_hallinta/assets/148875302/cb837110-a481-4609-ba59-7e20a99eddf8">
 
-Tulosteesta näkee, että avaimet ovat lisätty .ssh-hakemistoon. Siirryin hakemistoon, ja tulostin julkisen avaimen sisältävän <i>id_rsa.pub</i>-tiedoston sisällön. Kopioin avaimen ja lisäsin sen profiilini SSH-avaimeksi Githubista valitsemalla <b>Settings</b> > <b>SSH and GPG keys</b> > <b>New SSH key</b>. 
+Tulosteesta näkee, että avaimet ovat lisätty .ssh-hakemistoon. Siirryin hakemistoon, ja tulostin julkisen avaimen sisältävän <i>id_rsa.pub</i>-tiedoston sisällön. Kopioin avaimen, siirryin terminaalista desktopin puolelle, avasin nettiselaimen ja lisäsin SSH-avaimen profiilini Githubista valitsemalla <b>Settings</b> > <b>SSH and GPG keys</b> > <b>New SSH key</b>. 
 
 <img width="485" alt="Näyttökuva 2023-11-09 215303" src="https://github.com/esskra/palvelinten_hallinta/assets/148875302/8c57b01c-ac09-4828-b32d-3e82de62d30b">
 
