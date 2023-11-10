@@ -20,7 +20,7 @@ Tarkastettuani, että Git Bash oli asentunut oikein, siirryin Githubiin kopioima
 
 <img width="297" alt="Näyttökuva 2023-11-08 185828" src="https://github.com/esskra/palvelinten_hallinta/assets/148875302/a1d911d0-39a9-4740-8851-bdaadad92dd6">
 
-Siirryin Git Bashiin luomaan avainta. Käytin komentoa ``$ ssh keygen`` avaimen luomiseen. Komennon tarkoitus olisi luoda sekä julkisen että ksityinen avain. Julkinen avain tulisi lisätä Githubin kautta profiiliini, jotta SSH-yhteyden luominen onnistuisi.
+Siirryin Git Bashiin luomaan avainta. Käytin komentoa ``$ ssh keygen`` avaimen luomiseen. Komennon tarkoitus olisi luoda sekä julkisen että yksityinen avain. Julkinen avain tulisi lisätä Githubin kautta profiiliini, jotta SSH-yhteyden luominen onnistuisi.
 
 <img width="512" alt="Näyttökuva 2023-11-09 141847" src="https://github.com/esskra/palvelinten_hallinta/assets/148875302/d4048109-6f18-40d4-b366-767d5ca5081a">
 
@@ -53,7 +53,7 @@ Kun olin ajanut ``$ git push``-komennon, siirryin selaimella Githubiin tarkistam
 
 <img width="656" alt="Näyttökuva 2023-11-09 175829" src="https://github.com/esskra/palvelinten_hallinta/assets/148875302/200e55c1-95a0-46a7-82e6-ab1d1433d4f0">
 
-Lopuksi kokeilin vielä muutosten tallentamista jo olemassaolevaan tiedostoon. Avasin terminaalissa README.md-tiedoston, ja lisäsin sille Nano-tekstieditorissa lisää sisältöä. Lisättyäni tiedostoon uutta sisältöä, ajoin jälleen samat ``$ git init``, ``$ git add .``, ``$ git commit`` ja ``$ git push``-komennot. Koska olin aiemmin jo määritellyt itselleni käyttäjänimen ja salasanan, ei sitä enää tässä vaiheessa tarvinnut tehdä uudestaan. Siirryin taas selaimen puolelle tarkastamaan muutokset, ja tekemäni muutokset näkyivät selaimessa antamani kommentin kera. Toisella kerralla muutosten pushaaminen tuntui jo melko helpolta!
+Lopuksi kokeilin vielä muutosten tallentamista jo olemassaolevaan tiedostoon. Avasin terminaalissa README.md-tiedoston, ja lisäsin sille Nano-tekstieditorissa lisää sisältöä. Lisättyäni tiedostoon uutta sisältöä, ajoin jälleen samat <br>``$ git init``, ``$ git add .``, ``$ git commit`` ja ``$ git push``-komennot. Koska olin aiemmin jo määritellyt itselleni käyttäjänimen ja salasanan, ei sitä enää tässä vaiheessa tarvinnut tehdä uudestaan. Siirryin taas selaimen puolelle tarkastamaan muutokset, ja tekemäni muutokset näkyivät selaimessa antamani kommentin kera. Toisella kerralla muutosten pushaaminen tuntui jo melko helpolta!
 
 <img width="477" alt="Näyttökuva 2023-11-09 180633" src="https://github.com/esskra/palvelinten_hallinta/assets/148875302/e235abe9-d64d-486d-9a2e-004adf436a76">
 
