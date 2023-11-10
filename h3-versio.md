@@ -49,10 +49,15 @@ Käyttäjänimen ja salasanan määrittelyn jälkeen ajoin komennon ``$ git push
 
 <img width="482" alt="Näyttökuva 2023-11-09 175808" src="https://github.com/esskra/palvelinten_hallinta/assets/148875302/61f03770-7cce-46b5-b293-1cd377c98cba">
 
-Kun olin ajanut ``$ git push``-komennon, siirryin selaimella Githubiin tarkistamaan, oliko tekemäni muutokset näkyvissä myös verkon kautta. Olin ajanut komennon onnistuneesti, sillä <i>wintergit</i>-hakemistossani näkyi aiemmin terminaalissa luomani tiedosto <i>wintertestfile.md</i>.
+Kun olin ajanut ``$ git push``-komennon, siirryin selaimella Githubiin tarkistamaan, oliko tekemäni muutokset näkyvissä myös verkon kautta. Olin ajanut komennon onnistuneesti, sillä <i>wintergit</i>-hakemistossani näkyi aiemmin terminaalissa luomani tiedosto <i>wintertestfile.md</i> ja sille ``$ git commit`` vaiheessa antamani kommentti.
 
+<img width="656" alt="Näyttökuva 2023-11-09 175829" src="https://github.com/esskra/palvelinten_hallinta/assets/148875302/200e55c1-95a0-46a7-82e6-ab1d1433d4f0">
 
+Lopuksi kokeilin vielä muutosten tallentamista jo olemassaolevaan tiedostoon. Avasin terminaalissa README.md-tiedoston, ja lisäsin sille Nano-tekstieditorissa lisää sisältöä. Lisättyäni tiedostoon uutta sisältöä, ajoin jälleen samat ``$ git init``, ``$ git add .``, ``$ git commit`` ja ``$ git push``-komennot. Koska olin aiemmin jo määritellyt itselleni käyttäjänimen ja salasanan, ei sitä enää tässä vaiheessa tarvinnut tehdä uudestaan. Siirryin taas selaimen puolelle tarkastamaan muutokset, ja tekemäni muutokset näkyivät selaimessa antamani kommentin kera. Toisella kerralla muutosten pushaaminen tuntui jo melko helpolta!
 
+<img width="477" alt="Näyttökuva 2023-11-09 180633" src="https://github.com/esskra/palvelinten_hallinta/assets/148875302/e235abe9-d64d-486d-9a2e-004adf436a76">
+
+<img width="672" alt="Näyttökuva 2023-11-09 221312" src="https://github.com/esskra/palvelinten_hallinta/assets/148875302/0c983282-c3eb-455f-b67b-28dbc77cfcad">
 
 ## c) Doh! 
 Tässä tehtävässä tarkoituksena oli poistaa varastoon tehdyt muutokset ennen ``commit``-komennon ajamista. Aloitin tehtävän muuttamalla README.md tiedoston sisältöä. Alla olevassa kuvassa näkyy tiedostolle tehdyt muutokset nano-tekstieditorilla. 
