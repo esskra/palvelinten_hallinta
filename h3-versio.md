@@ -30,7 +30,7 @@ Komennon ajettuani tarkistin, että avaimet sisältävät tiedostot oli luotu .s
 
 <img width="515" alt="Näyttökuva 2023-11-09 142735" src="https://github.com/esskra/palvelinten_hallinta/assets/148875302/acb8c0e2-01af-486c-bb70-ea0fd2ab1bf8">
 
-Lisättyäni avaimen profiiliini pääsin luomaan SSH-yhteyttä Git Bashissa. SSH-yhteyttä varten käytin komentoa ``$ ssh -T git@github``. ``$ man ssh``-komento kertoo, että komennon T- tarkoittaa "Disable pseudo-terminal allocation.". Se siis estää terminaalia yrittämästä avata SSH-yhteyden kanssa terminaalia, koska Githubilla ei sitä ole. SSH-yhteyden luomisen jälkeen pysyn siis oman koneeni terminaalin sisällä. Komento toimi toivotulla tavalla, ja tuloste kertoi että olin päässyt sisään käyttäjälleni <i>esskra</i>
+Lisättyäni avaimen profiiliini pääsin luomaan SSH-yhteyttä Git Bashissa. SSH-yhteyttä varten käytin komentoa <br> ``$ ssh -T git@github``. ``$ man ssh``-komento kertoo, että komennon T- tarkoittaa "Disable pseudo-terminal allocation.". Se siis estää terminaalia yrittämästä avata SSH-yhteyden kanssa terminaalia, koska Githubilla ei sitä ole. SSH-yhteyden luomisen jälkeen pysyn siis oman koneeni terminaalin sisällä. Komento toimi toivotulla tavalla, ja tuloste kertoi että olin päässyt sisään käyttäjälleni <i>esskra</i>
 
 <img width="489" alt="Näyttökuva 2023-11-09 175158" src="https://github.com/esskra/palvelinten_hallinta/assets/148875302/7007ef72-afdd-444d-8821-e55ee84990e6">
 
