@@ -67,7 +67,16 @@ Varmistettuani, että kloonaus oli sujunut odotetusti, aloitin uuden tiedoston l
 
 ![image](https://github.com/esskra/palvelinten_hallinta/assets/148875302/6265886d-af67-48ac-a846-89947049e5af)
 
-Tiedoston luomisen jälkeen lähdin testaamaan, saanko pushattua tiedoston Githubiin. Käytin komentoja ``$ git init`` ``$ git add .`` ja ``$ git commit -m "Testi Githubiin Debianilla``. Komento configuroi nimen ja sähköpostin automaattisesti, koska käytin samaa konetta kuin aikaisemmin tehdessäni harjoitusta Windowsilla. 
+Tiedoston luomisen jälkeen lähdin testaamaan, saanko pushattua tiedoston Githubiin. Käytin komentoja ``$ git init`` <br> ``$ git add .`` ja ``$ git commit -m "Testi Githubiin Debianilla``. Komento configuroi nimen ja sähköpostin automaattisesti, koska käytin samaa konetta kuin aikaisemmin tehdessäni harjoitusta Windowsilla. Lopuksi pushasin tiedoston Githubiin komennolla ``$ git push``.
+
+![image](https://github.com/esskra/palvelinten_hallinta/assets/148875302/845d0088-8319-4652-9c19-a16c3b9e6b39)
+
+![image](https://github.com/esskra/palvelinten_hallinta/assets/148875302/9388fcbf-f076-434a-9835-bb607378994c)
+
+Siirryin Githubiin tarkistamaan, oliko komento toiminut odotetulla tavalla. <i>Wintergit</i>-hakemistoon oli ilmestynyt aikaisemmin luomani debianwintertest.md. 
+
+![image](https://github.com/esskra/palvelinten_hallinta/assets/148875302/d56e6d9d-5999-466b-a02d-05a651f6888d)
+
 
 
 
