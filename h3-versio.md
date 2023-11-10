@@ -49,43 +49,47 @@ Tuloste kertoi, mitä muutoksia varastoon on tehty ja kuka muutokset on tehnyt. 
 
 ## g) Vapaaehtoinen: Se toinen järjestelmä
 Tämän osion suoritin aiemmin kurssilla asentamallani Debian 12-virtuaalikoneella. Aloitin avaamalla koneen VirtualBoxin kautta, ja kirjauduttuani koneelle sisään avasin terminaalin. Terminaalissa ajoin ensimmäisenä ``$ sudo apt-get update``-komennon päivittääkseni pakettivarastot, jonka jälkeen päivitin paketit ``$ sudo apt-get upgrade``-komennolla. 
-Gitin asensin terminaalissa komennolla ``$ sudo apt-get install git``. Varmistin vielä asennuksen onnistuneen komennolla ``$ git version``. Alla olevasta kuvasta näkyy, että asennettu versio on 2.39.2.
+Gitin asensin terminaalissa komennolla ``$ sudo apt-get install git``. Varmistin vielä asennuksen onnistuneen komennolla ``$ git -v``. Alla olevasta kuvasta näkyy, että asennettu versio on 2.39.2.
 
-![image](https://github.com/esskra/palvelinten_hallinta/assets/148875302/a4420f3b-c742-4bdd-a88c-8bb486316851)
+<img width="196" alt="Näyttökuva 2023-11-08 185547" src="https://github.com/esskra/palvelinten_hallinta/assets/148875302/f3fe9e51-ecbd-454d-a16d-21e21e0e3ab0">
 
 Asennuksen jälkeen lähdin luomaan ``$ SSH-keygen``-komennolla tarvittavia SSH-avaimia. Komento luo sekä julkisen että yksityisen avaimen, joista julkinen lisätään GitHubin asetuksista käyttäjälle. 
 
-![image](https://github.com/esskra/palvelinten_hallinta/assets/148875302/27b28cad-6dc1-4759-9358-656d7cff296f)
+<img width="468" alt="Näyttökuva 2023-11-09 215238" src="https://github.com/esskra/palvelinten_hallinta/assets/148875302/cb837110-a481-4609-ba59-7e20a99eddf8">
 
 Tulosteesta näkee, että avaimet ovat lisätty .ssh-hakemistoon. Siirryin hakemistoon, ja tulostin julkisen avaimen sisältävän <i>id_rsa.pub</i>-tiedoston sisällön. Kopioin avaimen ja lisäsin sen profiilini SSH-avaimeksi Githubista valitsemalla <b>Settings</b> > <b>SSH and GPG keys</b> > <b>New SSH key</b>. 
 
-![image](https://github.com/esskra/palvelinten_hallinta/assets/148875302/f637f112-c12b-46cb-a774-cdbe18f7c030)
+<img width="485" alt="Näyttökuva 2023-11-09 215303" src="https://github.com/esskra/palvelinten_hallinta/assets/148875302/8c57b01c-ac09-4828-b32d-3e82de62d30b">
 
 Lisättyäni SSH-avaimen profiiliini, palasin takaisin terminaalin puolelle, jossa muodostin yhteyden komennolla 
 ``$ SSH -T git@github.com``. Muodostettuani yhteyden kloonasin <i>wintergit</i>-varaston virtuaalikoneelleni komennolla 
 ``$ git clone git@github.com:esskra/wintergit.git``. Varaston osoite pysyi luonnollisesti samana, kuin tehtävän b-osiossa.
 
-![image](https://github.com/esskra/palvelinten_hallinta/assets/148875302/f53953ce-b42c-4b44-8742-3e8a786e341d)
 
-![image](https://github.com/esskra/palvelinten_hallinta/assets/148875302/89f2a8ea-f012-4790-8497-b38df9ee7ca9)
+<img width="482" alt="Näyttökuva 2023-11-09 215356" src="https://github.com/esskra/palvelinten_hallinta/assets/148875302/c7c81d08-dedf-4348-973e-e74cabbd7ff0">
+
+<img width="479" alt="Näyttökuva 2023-11-09 215432" src="https://github.com/esskra/palvelinten_hallinta/assets/148875302/46c836da-4795-4bf6-b42a-81074b64a84e">
 
 Kloonattuani varaston siirryin <i>wintergit</i>-hakemistoon, ja tarkistin vielä, että aikaisemmin luodut tiedostot näkyivät hakemistossa. 
 
-![image](https://github.com/esskra/palvelinten_hallinta/assets/148875302/f20db2c7-eb3e-4132-ac7b-8dbc9f68aa6f)
+<img width="372" alt="Näyttökuva 2023-11-09 215459" src="https://github.com/esskra/palvelinten_hallinta/assets/148875302/a725b525-8c84-41cb-940c-e7bf962fb4a6">
 
 Varmistettuani, että kloonaus oli sujunut odotetusti, aloitin uuden tiedoston luomisen. Uusi tiedosto olisi tarkoitus  pushata Githubiin terminaalin kautta. Loin uuden tiedoston komennolla ``$ nano debianwintertest.md``. Alla olevassa kuvassa tiedoston sisältö. 
 
-![image](https://github.com/esskra/palvelinten_hallinta/assets/148875302/6265886d-af67-48ac-a846-89947049e5af)
+<img width="431" alt="Näyttökuva 2023-11-09 215755" src="https://github.com/esskra/palvelinten_hallinta/assets/148875302/03d07a7e-6fcf-41be-80ed-20630b1486ab">
 
 Tiedoston luomisen jälkeen lähdin testaamaan, saanko pushattua tiedoston Githubiin. Käytin komentoja ``$ git init`` <br> ``$ git add .`` ja ``$ git commit -m "Testi Githubiin Debianilla``. Komento configuroi nimen ja sähköpostin automaattisesti, koska käytin samaa konetta kuin aikaisemmin tehdessäni harjoitusta Windowsilla. Lopuksi pushasin tiedoston Githubiin komennolla ``$ git push``.
 
-![image](https://github.com/esskra/palvelinten_hallinta/assets/148875302/845d0088-8319-4652-9c19-a16c3b9e6b39)
+<img width="486" alt="Näyttökuva 2023-11-09 215837" src="https://github.com/esskra/palvelinten_hallinta/assets/148875302/5442998b-31d2-44d3-9747-69ceabc48185">
 
-![image](https://github.com/esskra/palvelinten_hallinta/assets/148875302/9388fcbf-f076-434a-9835-bb607378994c)
+<img width="471" alt="Näyttökuva 2023-11-09 215914" src="https://github.com/esskra/palvelinten_hallinta/assets/148875302/ec127272-7182-4495-8560-e265a1b8531e">
 
-Siirryin Githubiin tarkistamaan, oliko komento toiminut odotetulla tavalla. <i>Wintergit</i>-hakemistoon oli ilmestynyt aikaisemmin luomani debianwintertest.md, eli tiedoston luominen ja pushaaminen oli onnistunut.
 
-![image](https://github.com/esskra/palvelinten_hallinta/assets/148875302/d56e6d9d-5999-466b-a02d-05a651f6888d)
+Siirryin Githubiin tarkistamaan, oliko komento toiminut odotetulla tavalla. <i>Wintergit</i>-hakemistoon oli ilmestynyt aikaisemmin luomani debianwintertest.md, eli tiedoston luominen ja pushaaminen oli onnistunut. Halusin vielä lopuksi tarkistaa myös toimeni lokin kautta, ja ajoin taas komennon ``$ git log``. Tulosteesta näki, että viimeisimmän toimen olin tehnyt virtuaalikoneellani, sillä lokissa tekijänä näkyi aikaisemmin automaattisesti luotu käyttäjänimeni.
+
+<img width="658" alt="Näyttökuva 2023-11-09 215936" src="https://github.com/esskra/palvelinten_hallinta/assets/148875302/9ea1e5c6-a8ec-4d3a-ab9b-428e1755784f">
+
+<img width="488" alt="Näyttökuva 2023-11-09 220030" src="https://github.com/esskra/palvelinten_hallinta/assets/148875302/60741d71-5047-4d3f-bd8c-31772a057415">
 
 # Lähteet
 
