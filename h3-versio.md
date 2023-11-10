@@ -44,12 +44,12 @@ Kloonattuani varaston siirryin luomaan uutta tiedostoa hakemiston sisällä nano
 
 <img width="310" alt="Näyttökuva 2023-11-09 175619" src="https://github.com/esskra/palvelinten_hallinta/assets/148875302/953bf149-bc6e-4c1a-b18f-f1a780872aa4">
 
-Nyt kun tiedosto oli luotu, pääsin testaamaan sen pushaamista Githubiin. Ajoin ensin ``$ git init``-komennon, joka alustaa lisätyt tiedostot. Tämän jälkeen komento ``$ git add .`` joka lisää kaikki uudet muutokset tulevaa tiedostojen pushaamista varten. Jatkoin komennolla ``$ git commit``, joka tallentaa tehdyt muutokset pysyvästi. Lisäsin kommentin samalla komennolla käytämällä -m parametriä. Lopuksi ``$ git push``, joka pushaa tiedostot Githubiin, eli tämä komento on se, joka tekee muutokset näkyväksi verkkoselaimella. 
+Nyt kun tiedosto oli luotu, pääsin testaamaan sen pushaamista Githubiin. Ajoin ensin ``$ git init``-komennon, joka alustaa lisätyt tiedostot. Tämän jälkeen komento ``$ git add .`` joka lisää kaikki uudet muutokset tulevaa tiedostojen pushaamista varten. Jatkoin komennolla ``$ git commit``, joka tallentaa tehdyt muutokset pysyvästi. Lisäsin kommentin samalla komennolla käytämällä -m parametriä. Koska käytin komentoa ensimmäistä kertaa, jouduin määrittämään itselleni käyttäjänimen ja sähköpostin. Näiden määrittelyyn käytin komentoja ``$ git config --global user.email`` & ``$ git config --global user.name``.
+Käyttäjänimen ja salasanan määrittelyn jälkeen ajoin komennon ``$ git push``, joka pushaa tiedostot Githubiin, eli tämä komento on se, joka tekee muutokset näkyväksi verkkoselaimella. 
 
 <img width="482" alt="Näyttökuva 2023-11-09 175808" src="https://github.com/esskra/palvelinten_hallinta/assets/148875302/61f03770-7cce-46b5-b293-1cd377c98cba">
 
-
-
+Kun olin ajanut ``$ git push``-komennon, siirryin selaimella Githubiin tarkistamaan, oliko tekemäni muutokset näkyvissä myös verkon kautta. Olin ajanut komennon onnistuneesti, sillä <i>wintergit</i>-hakemistossani näkyi aiemmin terminaalissa luomani tiedosto <i>wintertestfile.md</i>.
 
 
 
