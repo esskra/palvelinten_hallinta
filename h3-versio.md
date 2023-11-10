@@ -63,11 +63,11 @@ Kloonattuani varaston siirryin <i>wintergit</i>-hakemistoon, ja tarkistin vielä
 
 ![image](https://github.com/esskra/palvelinten_hallinta/assets/148875302/f20db2c7-eb3e-4132-ac7b-8dbc9f68aa6f)
 
-Varmistettuani, että kloonaus oli sujunut odotetusti, aloitin uuden tiedoston luomisen. Uusi tiedosto olisi tarkoitus  pushata Githubiin terminaalin kautta. Loin uuden tiedoston komennolla ``$ nano debianwintertest.md``. Alla olevassa kuvassa tiedoston sisältö.
+Varmistettuani, että kloonaus oli sujunut odotetusti, aloitin uuden tiedoston luomisen. Uusi tiedosto olisi tarkoitus  pushata Githubiin terminaalin kautta. Loin uuden tiedoston komennolla ``$ nano debianwintertest.md``. Alla olevassa kuvassa tiedoston sisältö. 
 
 ![image](https://github.com/esskra/palvelinten_hallinta/assets/148875302/6265886d-af67-48ac-a846-89947049e5af)
 
-
+Tiedoston luomisen jälkeen lähdin testaamaan, saanko pushattua tiedoston Githubiin. Käytin komentoja ``$ git init`` ``$ git add .`` ja ``$ git commit -m "Testi Githubiin Debianilla``. Komento configuroi nimen ja sähköpostin automaattisesti, koska käytin samaa konetta kuin aikaisemmin tehdessäni harjoitusta Windowsilla. 
 
 
 
