@@ -34,6 +34,22 @@ Lisättyäni avaimen profiiliini pääsin luomaan SSH-yhteyttä Git Bashissa. SS
 
 <img width="489" alt="Näyttökuva 2023-11-09 175158" src="https://github.com/esskra/palvelinten_hallinta/assets/148875302/7007ef72-afdd-444d-8821-e55ee84990e6">
 
+Nyt pystyin siirtymään varastoni kloonaamiseen. Käytin komentoa ``$ git clone git@github.com:esskra/wintergit.git``. Komennossa linkkinä oli varastoni SSH-osoite. Komento kloonasi varaston, ja tarkistin vielä komennon toimineeni siirtymällä terminaalissa wintergit-hakemistoon ja tulostamalla hakemiston sisällön ``$ ls``-komennolla. Hakemiston sisältä löytyi tässä vaiheessa varaston tekovaiheessa luotu lisenssitiedosto sekä README.md-tiedosto. 
+
+<img width="421" alt="Näyttökuva 2023-11-09 175225" src="https://github.com/esskra/palvelinten_hallinta/assets/148875302/eca3e95b-9934-4a83-a180-41a4baa3fd1b">
+
+<img width="329" alt="Näyttökuva 2023-11-09 175350" src="https://github.com/esskra/palvelinten_hallinta/assets/148875302/b4b5d4be-33f4-4ca6-aea2-53f772c13685">
+
+Kloonattuani varaston siirryin luomaan uutta tiedostoa hakemiston sisällä nano-tekstieditorilla. Uuden tiedoston nimeksi annoin <i>wintertestfile.md</i> ja loin sen komennolla ``$ nano wintertestfile.md``. 
+
+<img width="310" alt="Näyttökuva 2023-11-09 175619" src="https://github.com/esskra/palvelinten_hallinta/assets/148875302/953bf149-bc6e-4c1a-b18f-f1a780872aa4">
+
+Nyt kun tiedosto oli luotu, pääsin testaamaan sen pushaamista Githubiin. Ajoin ensin ``$ git init``-komennon, joka alustaa lisätyt tiedostot. Tämän jälkeen komento ``$ git add .`` joka lisää kaikki uudet muutokset tulevaa tiedostojen pushaamista varten. Jatkoin komennolla ``$ git commit``, joka tallentaa tehdyt muutokset pysyvästi. Lisäsin kommentin samalla komennolla käytämällä -m parametriä. Lopuksi ``$ git push``, joka pushaa tiedostot Githubiin, eli tämä komento on se, joka tekee muutokset näkyväksi verkkoselaimella. 
+
+<img width="482" alt="Näyttökuva 2023-11-09 175808" src="https://github.com/esskra/palvelinten_hallinta/assets/148875302/61f03770-7cce-46b5-b293-1cd377c98cba">
+
+
+
 
 
 
