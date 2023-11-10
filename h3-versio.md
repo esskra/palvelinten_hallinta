@@ -51,7 +51,9 @@ Tulosteesta näkee, että avaimet ovat lisätty .ssh-hakemistoon. Siirryin hakem
 
 ![image](https://github.com/esskra/palvelinten_hallinta/assets/148875302/f637f112-c12b-46cb-a774-cdbe18f7c030)
 
-Lisättyäni SSH-avaimen profiiliini, palasin takaisin terminaalin puolelle, jossa muodostin yhteyden komennolla ``$ SSH -T git@github.com``. Muodostettuani yhteyden kloonasin <i>wintergit</i>-varaston virtuaalikoneelleni komennolla ``$ git clone git@github.com:esskra/wintergit.git``. Varaston osoite pysyi luonnollisesti samana, kuin tehtävän b-osiossa.
+Lisättyäni SSH-avaimen profiiliini, palasin takaisin terminaalin puolelle, jossa muodostin yhteyden komennolla 
+``$ SSH -T git@github.com``. Muodostettuani yhteyden kloonasin <i>wintergit</i>-varaston virtuaalikoneelleni komennolla 
+``$ git clone git@github.com:esskra/wintergit.git``. Varaston osoite pysyi luonnollisesti samana, kuin tehtävän b-osiossa.
 
 ![image](https://github.com/esskra/palvelinten_hallinta/assets/148875302/f53953ce-b42c-4b44-8742-3e8a786e341d)
 
