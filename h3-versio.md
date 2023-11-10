@@ -70,17 +70,17 @@ Lisättyäni SSH-avaimen profiiliini, palasin takaisin terminaalin puolelle, jos
 <img width="479" alt="Näyttökuva 2023-11-09 215432" src="https://github.com/esskra/palvelinten_hallinta/assets/148875302/46c836da-4795-4bf6-b42a-81074b64a84e">
 
 <img width="372" alt="Näyttökuva 2023-11-09 215459" src="https://github.com/esskra/palvelinten_hallinta/assets/148875302/a725b525-8c84-41cb-940c-e7bf962fb4a6">
-<br>
+
 Varmistettuani, että kloonaus oli sujunut odotetusti, aloitin uuden tiedoston luomisen. Uusi tiedosto olisi tarkoitus  pushata Githubiin terminaalin kautta. Loin uuden tiedoston komennolla ``$ nano debianwintertest.md``. Lisäsin nanossa tiedostolle sisällön ja tallensin sen.
 
 <img width="431" alt="Näyttökuva 2023-11-09 215755" src="https://github.com/esskra/palvelinten_hallinta/assets/148875302/03d07a7e-6fcf-41be-80ed-20630b1486ab">
-<br>
+
 Tiedoston luomisen jälkeen lähdin testaamaan, saanko pushattua tiedoston Githubiin. Käytin komentoja ``$ git init`` <br> ``$ git add .`` ja ``$ git commit -m``. Komento configuroi nimen ja sähköpostin automaattisesti, koska käytin samaa konetta kuin aikaisemmin tehdessäni harjoitusta Windowsilla. Lopuksi pushasin tiedoston Githubiin komennolla ``$ git push``.
 
 <img width="486" alt="Näyttökuva 2023-11-09 215837" src="https://github.com/esskra/palvelinten_hallinta/assets/148875302/5442998b-31d2-44d3-9747-69ceabc48185">
 
 <img width="471" alt="Näyttökuva 2023-11-09 215914" src="https://github.com/esskra/palvelinten_hallinta/assets/148875302/ec127272-7182-4495-8560-e265a1b8531e">
-<br>
+
 
 Siirryin Githubiin tarkistamaan, oliko komento toiminut odotetulla tavalla. <i>Wintergit</i>-hakemistoon oli ilmestynyt aikaisemmin luomani debianwintertest.md, eli tiedoston luominen ja pushaaminen oli onnistunut. Halusin vielä lopuksi tarkistaa myös toimeni lokin kautta, ja ajoin taas komennon ``$ git log``. Tulosteesta näki, että viimeisimmän toimen olin tehnyt virtuaalikoneellani, sillä lokissa tekijänä näkyi aikaisemmin automaattisesti luotu käyttäjänimeni.
 
