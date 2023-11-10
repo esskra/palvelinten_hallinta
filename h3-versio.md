@@ -18,7 +18,8 @@ Esimmäisenä tarkistin Windowsin komentokehotteesta komennolla ``$ git -v``, et
 
 Tarkastettuani, että Git Bash oli asentunut oikein, siirryin Githubiin kopioimaan <i>wintergit</i>-varastoni SSH-osoitetta. Linkkiä kopioidessani muistin kuitenkin, että en ollut vielä luonut tarvittavia avaimia harjoitusta varten, sillä Github kertoi, ettei profiilissani ollut vielä yhtäkään julkista SSH-avainta. 
 
-![image](https://github.com/esskra/palvelinten_hallinta/assets/148875302/04f46cea-3e06-4946-9244-352b4d0df2f1)
+<img width="297" alt="Näyttökuva 2023-11-08 185828" src="https://github.com/esskra/palvelinten_hallinta/assets/148875302/a1d911d0-39a9-4740-8851-bdaadad92dd6">
+
 
 Siirryin Git Bashiin luomaan 
 
