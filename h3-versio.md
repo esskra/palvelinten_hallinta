@@ -1,5 +1,5 @@
 # h3 Versio
-Tässä raportissa kerron vastaukseni Palvelinten Hallinta-kurssin tehtävään h3 Versio. Tehtävät ovat suoritettu osiota <i>g) Se toinen järjestelmä</i> lukuunottamatta omalla Windows-koneellani, ja sitä varten latasin Git Bash ohjelmiston [täältä](https://gitforwindows.org/). Asensin ohjelmiston Windowsille sen omilla oletusasetuksilla. Viimeiseen osioon on käytetty aiemmin kurssilla asennettua Debian 12-virtuaalikonetta.
+Tässä raportissa kerron vastaukseni Palvelinten Hallinta-kurssin tehtävään h3 Versio. Tehtävät ovat suoritettu osiota <i>g) Se toinen järjestelmä</i> lukuunottamatta omalla Windows-koneellani, ja sitä varten latasin Git Bash ohjelmiston [täältä](https://gitforwindows.org/). Asensin ohjelmiston Windowsille sen omilla oletusasetuksilla. Viimeiseen osioon on käytetty aiemmin kurssilla asennettua Debian 12-virtuaalikonetta. 
 
 ## a) Online
 Tässä osiossa tarkoituksena oli luoda uusi repository, jota tarvitaan <i>h3 Versio</i>-tehtävän muissa osioissa. Uuden varaston luominen oli jo tuttua hommaa edellisistä tehtävistä. Loin Githubiin verkossa repositoryn <i>wintergit</i> tehtävänannon mukaisesti. Lisäsin repositorylle README.md-tiedoston sekä GNU General Public License v3.0-lisenssin. 
@@ -15,6 +15,11 @@ Varaston luomisen jälkeen varmistin, että lisenssi ja README.md-tiedosto oli l
 Ensimmäisenä tarkistin Windowsin komentokehotteesta komennolla ``$ git -v``, että Git Bash-ohjelmisto oli asentunut oikein.
 
 <img width="198" alt="Näyttökuva 2023-11-09 183332" src="https://github.com/esskra/palvelinten_hallinta/assets/148875302/ae1ed558-bdf7-40b2-9e87-4f8c324262fb">
+
+
+
+
+
 
 
 
@@ -73,7 +78,7 @@ Tiedoston luomisen jälkeen lähdin testaamaan, saanko pushattua tiedoston Githu
 
 ![image](https://github.com/esskra/palvelinten_hallinta/assets/148875302/9388fcbf-f076-434a-9835-bb607378994c)
 
-Siirryin Githubiin tarkistamaan, oliko komento toiminut odotetulla tavalla. <i>Wintergit</i>-hakemistoon oli ilmestynyt aikaisemmin luomani debianwintertest.md. 
+Siirryin Githubiin tarkistamaan, oliko komento toiminut odotetulla tavalla. <i>Wintergit</i>-hakemistoon oli ilmestynyt aikaisemmin luomani debianwintertest.md, eli tiedoston luominen ja pushaaminen oli onnistunut.
 
 ![image](https://github.com/esskra/palvelinten_hallinta/assets/148875302/d56e6d9d-5999-466b-a02d-05a651f6888d)
 
