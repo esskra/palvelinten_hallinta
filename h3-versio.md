@@ -1,5 +1,5 @@
 # h3 Versio
-Tässä raportissa kerron vastaukseni Palvelinten Hallinta-kurssin tehtävään h3 Versio. Tehtävät ovat suoritettu osiota <br><i>g) Se toinen järjestelmä</i> lukuunottamatta omalla Windows-koneellani, ja sitä varten latasin Git Bash ohjelmiston [täältä](https://gitforwindows.org/). Asensin ohjelmiston Windowsille sen omilla oletusasetuksilla. Viimeiseen osioon on käytetty aiemmin kurssilla asennettua Debian 12-virtuaalikonetta. 
+Tässä raportissa kerron vastaukseni Palvelinten Hallinta-kurssin tehtävään h3 Versio. Tehtävät ovat suoritettu osiota <br><i>"g) Se toinen järjestelmä"</i> lukuunottamatta omalla Windows-koneellani, ja sitä varten latasin Git Bash ohjelmiston [täältä](https://gitforwindows.org/). Asensin ohjelmiston Windowsille sen omilla oletusasetuksilla. Viimeiseen osioon on käytetty aiemmin kurssilla asennettua Debian 12-virtuaalikonetta. 
 <br>Tehtävät on suoritettu osittain yhdessä [Thomas Helmisen](https://github.com/ThomasHelminen) sekä [Joonas Hautaviidan](https://github.com/hautadata) kanssa.
 
 ## a) Online
