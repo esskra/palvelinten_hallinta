@@ -123,13 +123,19 @@ Siirryin Githubiin tarkistamaan, oliko komento toiminut odotetulla tavalla. <i>W
 <img width="488" alt="Näyttökuva 2023-11-09 220030" src="https://github.com/esskra/palvelinten_hallinta/assets/148875302/60741d71-5047-4d3f-bd8c-31772a057415">
 
 # Lähteet
-- Karvinen, T. 13.10.2023. Infra as Code 2023. Luettavissa: https://terokarvinen.com/2023/configuration-management-2023-autumn/. Luettu 10.11.2023.
-- Github Docs. s.a. Cloning a repository. Luettavissa: https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository Luettu 10.11.2023
-- Git for windows. s.a. Luettavissa: https://gitforwindows.org/ Luettu 10.11.2023
-- McKenzie C. 11.1.2022. How to SSH into GitHub on Windows example. Luettavissa: https://www.theserverside.com/blog/Coffee-Talk-Java-News-Stories-and-Opinions/GitHub-SSH-Windows-Example Luettu 10.11.2023
-- Stack Overflow. 28.7.2013. What is Pseudo TTY-Allocation? (SSH and Github) Luettavissa: https://stackoverflow.com/questions/17900760/what-is-pseudo-tty-allocation-ssh-and-github Luettu 10.11.2023
-- Atlassian. s.a. Add, edit, and commit to source files. Luettavissa: https://support.atlassian.com/bitbucket-cloud/docs/add-edit-and-commit-to-source-files/ Luettu 10.11.2023
+- Atlassian, Bitbucket Support. s.a. Add, edit, and commit to source files. Luettavissa: https://support.atlassian.com/bitbucket-cloud/docs/add-edit-and-commit-to-source-files/. Luettu: 10.11.2023.
 
+- Karvinen, T. 13.10.2023. Infra as Code 2023. Luettavissa: https://terokarvinen.com/2023/configuration-management-2023-autumn/. Luettu 10.11.2023.
+  
+- GitHub Inc. s.a. Cloning a repository. Luettavissa: https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository. Luettu 10.11.2023.
+  
+- Git for windows. s.a. Luettavissa: https://gitforwindows.org/ Luettu 10.11.2023
+  
+- Stack Overflow. 28.7.2013. What is Pseudo TTY-Allocation? (SSH and Github) Luettavissa: https://stackoverflow.com/questions/17900760/what-is-pseudo-tty-allocation-ssh-and-github Luettu 10.11.2023
+
+- TheServerSide. McKenzie, C. 11.1.2022. How to SSH into GitHub on Windows example. Luettavissa: https://www.theserverside.com/blog/Coffee-Talk-Java-News-Stories-and-Opinions/GitHub-SSH-Windows-Example. Luettu 10.11.2023.
+  
+  
 
 
 
