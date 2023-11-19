@@ -8,7 +8,7 @@
   - top.sls tiedosto määrittää, mikä/mitä tiloja ajetaan milläkin orjalla.
   - Tällöin state.apply tilassa ei tarvitse erikseen nimetä ajettavia moduuleja.
 
-<b>Salt contributors: [Salt overview](https://docs.saltproject.io/salt/user-guide/en/latest/topics/overview.html#rules-of-yaml)
+<b>Salt contributors: [Salt overview](https://docs.saltproject.io/salt/user-guide/en/latest/topics/overview.html#rules-of-yaml)</b>
 - <b>Rules of YAML</b>
   - :)
 - <b>YAML simple structure</b>
