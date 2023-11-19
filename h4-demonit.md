@@ -99,8 +99,8 @@ Testasin ohjeessa olevaa ``$ nc -vz 8888`` komentoa eri kohdeosoitteilla, mutta 
 <img width="349" alt="Näyttökuva 2023-11-19 140709" src="https://github.com/esskra/palvelinten_hallinta/assets/148875302/11f245e9-6ffd-4bd8-8330-c7aaaf73fa3c">
 
 Ajattelin tämän johtuneen siitä, ettei demonin uudelleenkäynnistys ollut toiminut. Testasin tällä kertaa komentoa ``$ sudo systemctl stop ssh.service``, varmistin että palvelu oli varmasti pois päältä, ja vasta sen jälkeen käynnistin sen uudestaan komennolla ``$ sudo systemctl start ssh.service``. Tarkistin vielä lopuksi, että demoni oli päällä, eli nyt uudelleenkäynnistys oli varmasti onnistunut. <br>
-Kokeilin uudestaan ``$ nc -vz 8888`` ja törmäsin jälleen samaan ongelmaan. Lähdin siis tutkimaan Teron ohjetta tarkemmin ja huomasin vasta tässä vaiheessa, että yhteyden voi myös muodostaa SSHn avulla. <br>
-Nyt ajoin vuorostaan komennon ``$ $ ssh -p8888 essi@essi-virtualbox`` ja komento toimi! Salasanani annettua olin päässy sisään koneelleni aiemmin antamani 8888-portin kautta. Ennen koneelta poistumista tarkistin vielä, että olin varmasti etäyhteydellä koneen sisällä komennolla ``$ who`` ja sisällä oltiin! Varmistuksen jälkeen poistuin koneelta komennolla ``$ exit``.
+Kokeilin uudestaan ``$ nc -vz 8888`` ja törmäsin jälleen samaan ongelmaan. Tässä vaiheessa meinasi epätoivo iskeä, joten lähdin tutkimaan Teron ohjetta uudestaan, ja huomasin vasta tässä vaiheessa, että yhteyden voi myös muodostaa SSHn avulla. <br>
+Nyt ajoin vuorostaan komennon ``$ $ ssh -p8888 essi@essi-virtualbox`` ja komento toimi! Salasanani annettua olin päässyt sisään koneelleni aiemmin antamani 8888-portin kautta. Ennen koneelta poistumista tarkistin vielä, että olin varmasti etäyhteydellä koneen sisällä komennolla ``$ who`` ja sisällä oltiin! Varmistuksen jälkeen poistuin koneelta komennolla ``$ exit``.
 
 <img width="425" alt="Näyttökuva 2023-11-19 140910" src="https://github.com/esskra/palvelinten_hallinta/assets/148875302/e6a2a529-c32d-464a-8f28-8e8d6b0276bc">
 
