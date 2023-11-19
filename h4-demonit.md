@@ -2,7 +2,7 @@
 ## x) Lue ja tiivistä
 
 ## a) Hello SLS!
-Tätä tehtävää aloin tekemään käyttäen aiemmin <i>H2 karjaa</i>-tehtävässä luotua herra-orja-arkkitehtuuria. Aloitin tehtävän avaamalla oman Windows-koneeni komentokehoitteen, jossa siirryin oikeaan hakemistoon komennolla <br> ``$ cd essi_vagrant``. Koneet pyörimään tutulla ``$ vagrant up`` komennolla, jonka jälkeen muodostin SSH-yhteyden komennolla ``$ vagrant ssh``. Siirryin hakemistoon /srv/salt/hello, johon olin jo aiemmassa tehtävässä luonut <i>init.sls</i>- tiedoston. Komennolla ``$ sudo nano init.sls`` siirryin muokkaamaan tiedoston sisältöä nano-tekstieditorissa. Poistin ensin vanhan tehtävän sisällöt tiedostosta, jonka jälkeen lisäsin tiedostoon seuraavan sisällön:
+Tätä tehtävää aloin tekemään käyttäen aiemmin <i>H2 karjaa</i>-tehtävässä luotua herra-orja-arkkitehtuuria. Aloitin tehtävän avaamalla oman Windows-koneeni komentokehoitteen, jossa siirryin oikeaan hakemistoon komennolla <br> ``$ cd essi_vagrant``. Koneet käyntiin tutulla ``$ vagrant up`` komennolla, jonka jälkeen muodostin SSH-yhteyden komennolla ``$ vagrant ssh``. Siirryin hakemistoon /srv/salt/hello, johon olin jo aiemmassa tehtävässä luonut <i>init.sls</i>- tiedoston. Komennolla ``$ sudo nano init.sls`` siirryin muokkaamaan tiedoston sisältöä nano-tekstieditorissa. Poistin ensin vanhan tehtävän sisällöt tiedostosta, jonka jälkeen lisäsin tiedostoon seuraavan sisällön:
 <br>
 ```
 tasks:
@@ -42,7 +42,11 @@ Seuraavaksi vuorossa oli testisivun korvaaminen uudella tiedostolla. Testisivu <
 
 Aiemmin tulikin jo testattua, että palvelu on päällä, joten poistin Apachen t001-orjalta komennolla ``$ sudo apt-get remove apache2`` ja poistuin koneelta.
 <br>
-Siirryin takaisin herra-koneelle komennolla ``$ vagrant ssh`` jonka jälkeen vuorossa oli tilan luominen tiedostoon. Aloitin luomalla tehtävää varten uuden hakemiston komennolla ``$ mkdir apache`` hakemistoon /var/salt. Tämän jälkeen loin /var/salt/apache hakemistoon uuden <i>init.sls</i>-tiedoston, jonka jälkeen siirryin kirjoittamaan tilaa komennolla ``$ sudo nano init.sls``. Tarkoituksena oli siis tehdä sama kuin edellisessä vaiheessa, mutta nyt automatisoituna. Tähän vaiheeseen käytin apuna [tätä](https://docs.saltproject.io/salt/user-guide/en/latest/topics/states.html#state-modules) Salt Projectin ohjetta. <br>
+Siirryin takaisin herra-koneelle komennolla ``$ vagrant ssh`` jonka jälkeen vuorossa oli tilan luominen tiedostoon. Aloitin luomalla tehtävää varten uuden hakemiston komennolla ``$ mkdir apache`` hakemistoon /var/salt. Tämän jälkeen loin /var/salt/apache hakemistoon uuden <i>init.sls</i>-tiedoston, jonka jälkeen siirryin kirjoittamaan tilaa komennolla ``$ sudo nano init.sls``. 
+
+<img width="216" alt="Näyttökuva 2023-11-19 133732" src="https://github.com/esskra/palvelinten_hallinta/assets/148875302/a3a3c4f6-7cee-47ed-94a2-7467acd96aa5">
+
+Tarkoituksena oli siis tehdä sama kuin edellisessä vaiheessa, mutta nyt automatisoituna. Tähän vaiheeseen käytin apuna [tätä](https://docs.saltproject.io/salt/user-guide/en/latest/topics/states.html#state-modules) Salt Projectin ohjetta. <br>
 Ensimmäiseksi lisäsin tiedostoon pkg.installend funktion, joka asentaa halutun palvelun. Tämän jälkeen kaksi file-tilafunktiota, joista toinen poistaa halutun tiedoston ja toinen lisää halutun tiedoston haluttuun hakemiston. Viimeisenä service-funktiolla tarkastus, että demoni on käynnissä. Tiedoston sisältö näytti seuraavalta:
 
 ```
@@ -65,6 +69,19 @@ demoni:
 ```
 
 <img width="298" alt="Näyttökuva 2023-11-19 133119" src="https://github.com/esskra/palvelinten_hallinta/assets/148875302/2113721b-0052-49fc-bd02-4c0f65ae9109">
+
+Tässä kohtaa vähän jännitti, olinko onnistunut tehtävässä, joten ajoin komennon ``$ sudo salt '*' state.apply apache`` ottaakseni siitä selvää. Vähän yllätyksekseni tuloste kertoi tilan ajon onnistuneen! Alla olevissa kuvissa orjakoneen t002 tapahtuneet muutokset: Apache2 on jo asennettu, joten siinä ei muutoksia. <i>index.html</i> tiedosto on poistettu ja tyhjä tiedosto <i>indexkorvaus.html</i> lisätty /var/www/html hakemistoon. Viimeisenä service.running kertoo, että Apache2 on jo käytössä, tulos on True, muutoksia ei tapahdu. Lopussa tuloste kertoo, että kaikki neljä tilaa on asennettu onnistuneesti, mutta vain kahteen on tehty muutoksia. Tässä taas hyvä esimerkki idempotentista!
+
+<img width="373" alt="Näyttökuva 2023-11-19 133626" src="https://github.com/esskra/palvelinten_hallinta/assets/148875302/b195cb1f-35ff-4cab-86a7-0463f7887d00">
+
+<img width="296" alt="Näyttökuva 2023-11-19 133643" src="https://github.com/esskra/palvelinten_hallinta/assets/148875302/6457b339-d16d-466b-9d96-3cebb391f816">
+
+Koska ajoin state.apply komennon molemmille koneelle, sain myös tulosteen molempien koneiden tilan ajosta. Koska poistin Apachen t001-koneelta, init.sls- tiedoston pkg.installed funktio asensi Apachen sille onnistuneesti. Muuten tuloste oli sama kuin t002-koneella.
+
+<img width="387" alt="Näyttökuva 2023-11-19 133720" src="https://github.com/esskra/palvelinten_hallinta/assets/148875302/4f9b6eeb-1026-47c5-9b04-a80cb6c974ee">
+
+
+
 
 
 
