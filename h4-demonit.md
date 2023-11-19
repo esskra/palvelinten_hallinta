@@ -9,8 +9,30 @@
   - Tällöin state.apply tilassa ei tarvitse erikseen nimetä ajettavia moduuleja.
 
 <b>Salt contributors: [Salt overview](https://docs.saltproject.io/salt/user-guide/en/latest/topics/overview.html#rules-of-yaml)
-- Rules of YAML</b>
-  - 
+- <b>Rules of YAML</b>
+  - :)
+- <b>YAML simple structure</b>
+- <b>Lists and dictionaries - YAML block structures</b>
+
+<b>Salt contributors: [Salt states](https://docs.saltproject.io/salt/user-guide/en/latest/topics/states.html#state-modules)</b>
+- <b>State modules</b>
+  - Yksittäisiä tiloja luodessa määrittää mitä suoritetaan.
+  - Voi syntyä ristiriitoja, state moduuleissa ei ole esim. status-vaihtoehtoa.
+    
+- <b>The state SLS data structure</b>
+  - State määrittelee tilan tunnisteen, tilan, funktion, nimen ja mahdolliset argumentit.
+
+- <b>Organizing states</b>
+  - State-tiedostot tulisi toteuttaa mahdollisimman yksinkertaisesti, jotta se olisi ymmärrettävää myös muille käyttäjille.
+ 
+- <b>The top.sls file</b>
+  - Käytännöllistä, koska top.sls tiedoston ansiosta ei ole tarvetta ajaa useita state-tiloja, vaan yksi tiedosto hallitsee useita orjia. 
+  - Tiedoston sisältö ja rakenne tulee pyrkiä pitämään mahdollisimman yksinkertaisena.
+ 
+- <b>Create the SSH state, Create the Apache state</b>
+  - :)
+
+ 
 
 
 
