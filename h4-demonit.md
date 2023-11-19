@@ -27,6 +27,11 @@ base:
 
 <img width="215" alt="Näyttökuva 2023-11-19 124439" src="https://github.com/esskra/palvelinten_hallinta/assets/148875302/cc04afe3-feb5-4fda-9c71-fdd6bd97cc27">
 
-Tämän jälkeen testaamaan, toimiiko tila ajamalla komento ``$ sudo salt '*' state.apply``. Koska tein muutokset <i>top.sls</i>-tiedostoon, ei 
+Tämän jälkeen testaamaan, toimiiko tila ajamalla komento ``$ sudo salt '*' state.apply``. Koska tein muutokset <i>top.sls</i>-tiedostoon, komenolle ei tarvitse asettaa erikseen kohde-parametrejä. Tilan ajo sujui taas onnistuneesti molemmilla orjilla.  
+
+<img width="357" alt="Näyttökuva 2023-11-19 124424" src="https://github.com/esskra/palvelinten_hallinta/assets/148875302/2c3a9046-b1d4-4248-9005-8c56cb996eda">
+
+## c) Apache. 
 
 
+# Lähteet:
