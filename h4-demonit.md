@@ -2,7 +2,15 @@
 ## x) Lue ja tiivistä
 <b>Karvinen 2023: [Salt Vagrant - automatically provision one master and two slaves](https://terokarvinen.com/2023/salt-vagrant/#infra-as-code---your-wishes-as-a-text-file)
 - Infra as Code - Your wishes as a text file</b>
-  - kk
+  - Ohjeen init.sls tiedosto on YAML-kieltä.
+  - Sisennyksellä on väliä, ja se on aina kaksi välilyöntiä. <b>Ei</b> tabia.
+- <b>top.sls - What Slave Runs What States</b>
+  - top.sls tiedosto määrittää, mikä/mitä tiloja ajetaan milläkin orjalla.
+  - Tällöin state.apply tilassa ei tarvitse erikseen nimetä ajettavia moduuleja.
+
+<b>Salt contributors: [Salt overview](https://docs.saltproject.io/salt/user-guide/en/latest/topics/overview.html#rules-of-yaml)
+- Rules of YAML</b>
+  - 
 
 
 
