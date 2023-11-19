@@ -42,12 +42,12 @@ Seuraavaksi vuorossa oli testisivun korvaaminen uudella tiedostolla. Testisivu <
 
 Aiemmin tulikin jo testattua, että palvelu on päällä, joten poistin Apachen t001-orjalta komennolla ``$ sudo apt-get remove apache2`` ja poistuin koneelta.
 <br>
-Siirryin takaisin herra-koneelle komennolla ``$ vagrant ssh`` jonka jälkeen vuorossa oli tilan luominen tiedostoon. Aloitin luomalla tehtävää varten uuden hakemiston komennolla ``$ mkdir apache`` hakemistoon /var/salt. Tämän jälkeen loin /var/salt/apache hakemistoon uuden <i>init.sls</i>-tiedoston, jonka jälkeen siirryin kirjoittamaan tilaa komennolla ``$ sudo nano init.sls``. 
+Siirryin takaisin herra-koneelle komennolla ``$ vagrant ssh`` jonka jälkeen vuorossa oli tilan luominen tiedostoon. Aloitin luomalla tehtävää varten uuden hakemiston komennolla ``$ mkdir apache`` hakemistoon /var/salt. Tämän jälkeen loin /var/salt/apache hakemistoon uuden <i>init.sls</i>-tiedoston.
 
-<img width="216" alt="Näyttökuva 2023-11-19 133732" src="https://github.com/esskra/palvelinten_hallinta/assets/148875302/a3a3c4f6-7cee-47ed-94a2-7467acd96aa5">
+<img width="280" alt="Näyttökuva 2023-11-19 133732" src="https://github.com/esskra/palvelinten_hallinta/assets/148875302/a3a3c4f6-7cee-47ed-94a2-7467acd96aa5">
 
 Tarkoituksena oli siis tehdä sama kuin edellisessä vaiheessa, mutta nyt automatisoituna. Tähän vaiheeseen käytin apuna [tätä](https://docs.saltproject.io/salt/user-guide/en/latest/topics/states.html#state-modules) Salt Projectin ohjetta. <br>
-Ensimmäiseksi lisäsin tiedostoon pkg.installend funktion, joka asentaa halutun palvelun. Tämän jälkeen kaksi file-tilafunktiota, joista toinen poistaa halutun tiedoston ja toinen lisää halutun tiedoston haluttuun hakemiston. Viimeisenä service-funktiolla tarkastus, että demoni on käynnissä. Tiedoston sisältö näytti seuraavalta:
+Aloitin kirjoittamaan tilaa komennolla ``$ sudo nano init.sls``, jonka avulla siirryin nano-tekstieditoriin. Ensimmäiseksi lisäsin tiedostoon pkg.installend funktion, joka asentaa halutun palvelun. Tämän jälkeen kaksi file-tilafunktiota, joista toinen poistaa halutun tiedoston ja toinen lisää halutun tiedoston haluttuun hakemiston. Viimeisenä service-funktiolla tarkastus, että demoni on käynnissä. Tiedoston sisältö näytti seuraavalta:
 
 ```
 apache2_asennus:
