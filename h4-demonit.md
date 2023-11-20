@@ -71,7 +71,7 @@ base:
 
 <img width="215" alt="Näyttökuva 2023-11-19 124439" src="https://github.com/esskra/palvelinten_hallinta/assets/148875302/cc04afe3-feb5-4fda-9c71-fdd6bd97cc27">
 
-Tämän jälkeen testaamaan, toimiiko tila ajamalla komento ``$ sudo salt '*' state.apply``. Koska tein muutokset <i>top.sls</i>-tiedostoon, komenolle ei tarvitse asettaa erikseen kohde-parametrejä. Tilan ajo sujui taas onnistuneesti molemmilla orjilla.  
+Tämän jälkeen lähdin testaamaan, toimiiko tila ajamalla komento ``$ sudo salt '*' state.apply``. Koska tein muutokset <i>top.sls</i>-tiedostoon, komennolle ei tarvitse asettaa erikseen kohde-parametrejä. Tilan ajo sujui taas onnistuneesti molemmilla orjilla.  
 
 <img width="357" alt="Näyttökuva 2023-11-19 124424" src="https://github.com/esskra/palvelinten_hallinta/assets/148875302/2c3a9046-b1d4-4248-9005-8c56cb996eda">
 
@@ -144,15 +144,22 @@ Testasin ohjeessa olevaa ``$ nc -vz 8888`` komentoa eri kohdeosoitteilla, mutta 
 
 Ajattelin tämän johtuneen siitä, ettei demonin uudelleenkäynnistys ollut toiminut. Testasin tällä kertaa komentoa ``$ sudo systemctl stop ssh.service``, varmistin että palvelu oli varmasti pois päältä, ja vasta sen jälkeen käynnistin sen uudestaan komennolla ``$ sudo systemctl start ssh.service``. Tarkistin vielä lopuksi, että demoni oli päällä, eli nyt uudelleenkäynnistys oli varmasti onnistunut. <br>
 Kokeilin uudestaan ``$ nc -vz 8888`` ja törmäsin jälleen samaan ongelmaan. Tässä vaiheessa meinasi epätoivo iskeä, joten lähdin tutkimaan Teron ohjetta uudestaan, ja huomasin vasta tässä vaiheessa, että yhteyden voi myös muodostaa SSHn avulla. <br>
-Nyt ajoin vuorostaan komennon ``$ $ ssh -p8888 essi@essi-virtualbox`` ja komento toimi! Salasanani annettua olin päässyt sisään koneelleni aiemmin antamani 8888-portin kautta. Ennen koneelta poistumista tarkistin vielä, että olin varmasti etäyhteydellä koneen sisällä komennolla ``$ who`` ja sisällä oltiin! Varmistuksen jälkeen poistuin koneelta komennolla ``$ exit``.
+Nyt ajoin vuorostaan komennon ``$ ssh -p8888 essi@essi-virtualbox`` ja komento toimi! Salasanani annettua olin päässyt sisään koneelleni aiemmin antamani 8888-portin kautta. Ennen koneelta poistumista tarkistin vielä, että olin varmasti etäyhteydellä koneen sisällä komennolla ``$ who`` ja sisällä oltiin! Varmistuksen jälkeen poistuin koneelta komennolla ``$ exit``.
 
 <img width="425" alt="Näyttökuva 2023-11-19 140910" src="https://github.com/esskra/palvelinten_hallinta/assets/148875302/e6a2a529-c32d-464a-8f28-8e8d6b0276bc">
 
 <img width="302" alt="Näyttökuva 2023-11-19 140928" src="https://github.com/esskra/palvelinten_hallinta/assets/148875302/7423f4c3-52ee-4aba-850b-6acd86511506">
 
+Tämän viikon tehtävä oli hyvin opettavainen, sillä harjoituksissa pääsi hyödyntämään jo aiemmin opittuja asiota. 
 
 
 # Lähteet:
-- https://docs.saltproject.io/en/getstarted/fundamentals/top.html
-- 
+- Karvinen, T. 3.4.2018. Pkg-File-Service – Control Daemons with Salt – Change SSH Server Port. Luettavissa: https://terokarvinen.com/2018/04/03/pkg-file-service-control-daemons-with-salt-change-ssh-server-port/?fromSearch=karvinen%20salt%20ssh. Luettu 19.11.2023.
+- Karvinen, T. 13.10.2023. Infra as Code 2023. Luettavissa: https://terokarvinen.com/2023/configuration-management-2023-autumn/. Luettu 19.11.2023.
+- Karvinen, T. 28.3.2023. Salt Vagrant - automatically provision one master and two slaves. Luettavissa: https://terokarvinen.com/2023/salt-vagrant/#infra-as-code---your-wishes-as-a-text-file. Luettu 19.11.2023.
+- Salt Project. s.a.. Salt overview. Luettavissa: https://docs.saltproject.io/salt/user-guide/en/latest/topics/overview.html#rules-of-yaml. Luettu 19.11.2023.
+- Salt Project. s.a.. The Top File. Luettavissa: https://docs.saltproject.io/en/latest/ref/states/top.html. Luettu 19.11.2023.
+- Salt Project. s.a.. Salt states. Luettavissa: https://docs.saltproject.io/salt/user-guide/en/latest/topics/states.html#state-modules. Luettu 19.11.2023.
+  
+  
 
