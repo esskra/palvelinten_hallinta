@@ -1,4 +1,6 @@
 # h4 Demonit
+Tässä raportissa kerron vastaukseni Palvelinten Hallinta- kurssin tehtävään 'h4 Versio'. Tehtävät ovat suoritettu itsenäisesti 19.11.2023.
+
 ## x) Lue ja tiivistä
 <b>Karvinen 2023: [Salt Vagrant - automatically provision one master and two slaves](https://terokarvinen.com/2023/salt-vagrant/#infra-as-code---your-wishes-as-a-text-file)
 - Infra as Code - Your wishes as a text file</b>
@@ -10,9 +12,15 @@
 
 <b>Salt contributors: [Salt overview](https://docs.saltproject.io/salt/user-guide/en/latest/topics/overview.html#rules-of-yaml)</b>
 - <b>Rules of YAML</b>
-  - :)
+  - YAML on yleisesti käytetty oletustulkkina Saltissa. Sen päätehtävä on kääntää YAML-datarakenne Python datarakenteeksi.
+  - Tiedot ovat jäsennelty ``key: value`` pareiksi.
+  - Ei tabia, vain välilyöntien käyttö sallittua.
+  - Kommentit alkavat hashtagilla (#)
 - <b>YAML simple structure</b>
+  - YAML rakenne koostuu skaalareista, listoista ja sanakirjoista (dictionaries).
 - <b>Lists and dictionaries - YAML block structures</b>
+  - YAML on lohkorakenne
+  - Sisennys määrittää kontekstin.
 
 <b>Salt contributors: [Salt states](https://docs.saltproject.io/salt/user-guide/en/latest/topics/states.html#state-modules)</b>
 - <b>State modules</b>
@@ -30,13 +38,11 @@
   - Tiedoston sisältö ja rakenne tulee pyrkiä pitämään mahdollisimman yksinkertaisena.
  
 - <b>Create the SSH state, Create the Apache state</b>
-  - :)
+  - Esimerkit siitä, kuinka luoda SSH- ja Apache-tilatiedosto.
  
 - <b>Karvinen 2018: [Pkg-File-Service – Control Daemons with Salt – Change SSH Server Port](https://terokarvinen.com/2018/04/03/pkg-file-service-control-daemons-with-salt-change-ssh-server-port/?fromSearch=karvinen%20salt%20ssh)</b>
-  - 
-
- 
-
+  - Esimerkki SSH-portin muuttamisesta
+  - Ensin asennetaan palvelu, korvataan testisivu, lopuksi palvelun uudelleenkäynnistys.
 
 
 ## a) Hello SLS!
