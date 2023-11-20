@@ -40,7 +40,7 @@ Tässä raportissa kerron vastaukseni Palvelinten Hallinta- kurssin tehtävään
 - <b>Create the SSH state, Create the Apache state</b>
   - Esimerkit siitä, kuinka luoda SSH- ja Apache-tilatiedosto.
  
-- <b>Karvinen 2018: [Pkg-File-Service – Control Daemons with Salt – Change SSH Server Port](https://terokarvinen.com/2018/04/03/pkg-file-service-control-daemons-with-salt-change-ssh-server-port/?fromSearch=karvinen%20salt%20ssh)</b>
+<b>Karvinen 2018: [Pkg-File-Service – Control Daemons with Salt – Change SSH Server Port](https://terokarvinen.com/2018/04/03/pkg-file-service-control-daemons-with-salt-change-ssh-server-port/?fromSearch=karvinen%20salt%20ssh)</b>
   - Esimerkki SSH-portin muuttamisesta
   - Ensin asennetaan palvelu, korvataan testisivu, lopuksi palvelun uudelleenkäynnistys.
 
