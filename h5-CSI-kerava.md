@@ -35,7 +35,7 @@ Luotuani tiedoston graafisen käyttöliittymän kautta, siirryin terminaaliin ta
 
 ## c) Komennus
 Tässä tehtävässä tarkoituksena oli luoda Salt-tila, joka asentaa järjestelmään uuden komennon. Käytin mallina viime luennolla talteen ottamaani kuvakaappausta Teron tekemästä demosta.
-Aloitin tehtävän luomalla ensin käsin shell scriptin komenolla ``$ nano tervehdys``. Halusin tehdä yksinkertaisen skriptin,  joka tervehtii käyttäjää ja kertoo silloisen päivän. Lisäsin tiedostoon seuraavat komennot: 
+Aloitin tehtävän luomalla ensin käsin shell scriptin komenolla ``$ nano tervehdys``. Halusin tehdä yksinkertaisen skriptin,  joka tervehtii käyttäjää ja kertoo senhetkisen päivän. Lisäsin tiedostoon seuraavat komennot: 
 
 ```
 #!/usr/bin/bash
