@@ -34,7 +34,7 @@ Luotuani tiedoston graafisen käyttöliittymän kautta, siirryin terminaaliin ta
 <img width="374" alt="Näyttökuva 2023-11-27 001410" src="https://github.com/esskra/palvelinten_hallinta/assets/148875302/021d5f8e-a38a-4a9e-b0b7-ad55ef4ecf88">
 
 ## c) Komennus
-Tässä tehtävässä tarkoituksena oli luoda Salt-tila, joka asentaa järjestelmään uuden komennon. Käytin mallina viime luennolla talteen ottamaani kuvakaappausta Teron tekemästä demosta.
+Tässä tehtävässä tarkoituksena oli luoda Salt-tila, joka asentaa järjestelmään uuden komennon. Tehtävää varten siirryin takaisin Vagrantin puolelle. Käytin mallina viime luennolla talteen ottamaani kuvakaappausta Teron tekemästä demosta. 
 Aloitin tehtävän luomalla ensin käsin shell scriptin komenolla ``$ nano tervehdys``. Halusin tehdä yksinkertaisen skriptin,  joka tervehtii käyttäjää ja kertoo senhetkisen päivän. Lisäsin tiedostoon seuraavat komennot: 
 
 ```
@@ -80,8 +80,81 @@ Kävin nanossa korjaamassa tilanteen ja ajoin tilan uudestaan. Tällä kertaa ho
 
 
 ## d) Apassi
+Tämän tehtävän tarkoituksena oli asentaa Salt-tila, joka asentaa Apachen näyttämään kotihakemistoja. Tässä tehtävässä käytin apuna Teron <i>[Apache User Homepages Automatically – Salt Package-File-Service Example](https://terokarvinen.com/2018/04/03/apache-user-homepages-automatically-salt-package-file-service-example/)</i> ohjetta. 
+Sirryin /srv/salt hakemistoon, ja loin sinne uuden <i>apache2</i> hakemiston komennolla ``$ sudo mkdir apache2``. Siirryin luomaani <i>apache2</i>- hakemistoon, ja loin sinne uuden html-tiedoston komennolla ``$ sudo nano apache2.html``. Alla tiedostoon lisäämäni sisältö.
+
+<img width="287" alt="Näyttökuva 2023-11-27 095839" src="https://github.com/esskra/palvelinten_hallinta/assets/148875302/0df56709-093a-4d76-9177-4173c99a7939">
+
+Html-tiedoston luomisen jälkeen loin vielä <i>init.sls</i>- tiedoston komennolla ``$ sudo nano init.sls``. Lisäsin sinne ohjeiden mukaiset konfiguraatiot, jossa vaihdoin vain tiedoston nimet oikeiksi:
+
+```
+apache2:
+ pkg.installed
+/var/www/html/index.html:
+ file.managed:
+   - source: salt://apache2/apache2.html
+/etc/apache2/mods-enabled/userdir.conf:
+ file.symlink:
+   - target: ../mods-available/userdir.conf
+/etc/apache2/mods-enabled/userdir.load:
+ file.symlink:
+   - target: ../mods-available/userdir.load
+apache2service:
+ service.running:
+   - name: apache2
+   - watch:
+     - file: /etc/apache2/mods-enabled/userdir.conf
+     - file: /etc/apache2/mods-enabled/userdir.load
+```
+
+<img width="294" alt="Näyttökuva 2023-11-27 095123" src="https://github.com/esskra/palvelinten_hallinta/assets/148875302/f6fff607-79d8-4b3c-a6a1-9dda6703f297">
+
+Lisäämässäni komentopätkässä <i>pkg.installed</i> kertoo, onko Apache2 asennettuna ja <i>file.managed</i> kertoo, että index.html tiedoston lähteenä onkin äsken luomani <i>apache2.html</i>-tiedosto. Muista konfiguraatioista en rehellisesti ainakaan tässä vaiheessa ymmärrä paljoakaan.
+Joka tapauksessa seuraavaksi siirryin tilan ajoon t001-orjalle komennolla ``$ sudo salt 't001' state.apply apache2``. Tilan ajo onnistui, ja tuloste näytti seuraavaa:
+
+<img width="492" alt="Näyttökuva 2023-11-27 095018" src="https://github.com/esskra/palvelinten_hallinta/assets/148875302/a59c7d09-45a5-42d9-8bc2-1992ab1ea970">
+
+<img width="497" alt="Näyttökuva 2023-11-27 095036" src="https://github.com/esskra/palvelinten_hallinta/assets/148875302/bd029745-f45a-4d14-a729-a1f9538c972c">
+
+Succeeded: 5 (changed=4) kertoo, että kaikki tilat ovat ajettu onnistuneesti, mutta yhteen ei ole tehty muutoksia. Tässä tapauksessa muutoksia ei tapahtunut <i>pkg.installed</i> komennolla, sillä t001-orjalla oli jo Apache2 asennettuna. 
+Lähdin vielä testaamaan, oliko <i>index.html</i> tiedoston sisältö tilan ajamisen jälkeen oikein. Nythän siis tiedostossa tulisi olla aikaisemmin luomani <i>apache2.html</i> tiedoston sisältö. Ajoin komennon ``$ sudo salt 't001' cmd.run 'cat /var/www/html/index.html`'``, ja komento tulosti t001 orjan <i>index.html</i> tiedoston sisällön. Tuloste näyttää juuri siltä miltä pitääkin!
+
+<img width="472" alt="Näyttökuva 2023-11-27 095317" src="https://github.com/esskra/palvelinten_hallinta/assets/148875302/d2aed081-1ea0-43c1-838d-815b84bded61">
 
 ## e) Ämpärillinen. 
+Tässä tehtävässä loin Salt-tilan, joka asentaa järjestelmään kansiollisen komentoja. 
+Aloitin siirymällä /srv/salt-hakemistoon, ja loin sinne uuden hakemiston komennolla ``$ sudo mkdir ämpäri``. Siirryin <i>ämpäri</i>- hakemistoon, ja lisäsin sinne muutaman tiedoston ``$ sudo touch`` komennolla. Ajattelin ensin jättäväni tiedostot tyhjiksi, mutta päädyin lisäämään jokaiseen hyvin yksinkertaisen scriptin. 
+
+<img width="245" alt="Näyttökuva 2023-11-27 103820" src="https://github.com/esskra/palvelinten_hallinta/assets/148875302/cad373b3-1aa3-439d-8e81-2a4438dd7066">
+
+Luotuani tyhjät tiedostot hakemistoon, siirryin luomaan sinne <i>init.sls</i> tiedostoa komennolla ``$ sudo nano init.sls``.
+Lisäsin tiedostoon seuraavan sisällön: 
+```
+/usr/local/bin/Aaaa:
+  file.managed:
+    - source: salt://ämpäri/Aaaa
+    - mode: "0755"
+
+/usr/local/bin/Beee:
+  file.managed:
+    - source: salt://ämpäri/Beee
+    - mode: "0755"
+
+/usr/local/bin/Ceee:
+  file.managed:
+    - source: salt://ämpäri/Ceee
+    - mode: "0755"
+```
+<img width="275" alt="Näyttökuva 2023-11-27 103351" src="https://github.com/esskra/palvelinten_hallinta/assets/148875302/4b27d7b7-f16e-4463-ab2c-2a4ba96018f3">
+
+Sitten kokeilemaan, toimiiko tilan ajo. Ajoin tilan taas t001-orjalle komennolla ``$ sudo salt 't001' state.apply ämpäri``. Tuloste näyttää vihreää, eli tilan ajo onnistui!
+
+<img width="280" alt="Näyttökuva 2023-11-27 104153" src="https://github.com/esskra/palvelinten_hallinta/assets/148875302/2cf78f2a-35e7-4680-832b-bd39dacf7c38">
+
+Lopuksi testasin vielä tilojen ajoa orjalla komennolla ``$ sudo salt 't001' cmd.run 'Aaaa'``. Jokaisen skriptin ajaminen orjalla sujui onnistuneesti, jee!
+
+<img width="434" alt="Näyttökuva 2023-11-27 104254" src="https://github.com/esskra/palvelinten_hallinta/assets/148875302/9f76509c-ee8c-47ea-8cc5-b381771b3571">
+
 
 # Lähteet:
 
