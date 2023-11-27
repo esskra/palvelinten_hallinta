@@ -1,4 +1,5 @@
 # h5 CSI Kerava
+Tässä raportissa kerron vastaukseni Palvelinten Hallinta- kurssin tehtävään 'h5 CSI Kerava'. Tehtävät on suoritettu itsenäisesti 26.11.2023.
 ## x) Lue ja tiivistä.
 <b>Karvinen 2018: [Apache User Homepages Automatically – Salt Package-File-Service Example](https://terokarvinen.com/2018/04/03/apache-user-homepages-automatically-salt-package-file-service-example/)</b>
   - Ensin käsin, vasta sitten automaattisesti. Automaatio on mahdollista tehdä vain, jos tiedät, miten asia tehdään käsin.
