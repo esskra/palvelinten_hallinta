@@ -157,5 +157,8 @@ Lopuksi testasin vielä tilojen ajoa orjalla komennolla ``$ sudo salt 't001' cmd
 
 
 # Lähteet:
+- Karvinen, T. 13.10.2023. Infra as Code 2023. Luettavissa: https://terokarvinen.com/2023/configuration-management-2023-autumn/. Luettu 26.11.2023.
+- Karvinen, T. 3.4.2018. Apache User Homepages Automatically – Salt Package-File-Service Example. Luettavissa: https://terokarvinen.com/2018/04/03/apache-user-homepages-automatically-salt-package-file-service-example/. Luettu 26.11.2023.
+  
 
 
