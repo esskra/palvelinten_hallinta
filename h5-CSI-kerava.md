@@ -70,14 +70,18 @@ Tiedoston luotuani pääsin testaamaan, toimiiko tilan ajaminen. Ajoin komennon 
 
 <img width="442" alt="Näyttökuva 2023-11-27 015945" src="https://github.com/esskra/palvelinten_hallinta/assets/148875302/9593dd4b-f14f-4f73-8615-7963eca79946">
 
-Kävin nanossa korjaamassa tilanteen ja ajoin tilan uudestaan. Tällä kertaa homma toimi niin kuin pitikin, ja tuloste kertoi tilan ajon onnistuneen. Lopuksi kävin vielä tarkistamassa, että tiedosto on varmasti luotu t001-orjalle. Ensin listasin orjan /usr/local/bin hakemiston sisällön komennolla ``$ sudo salt 't001' cmd.run 'ls /usr/local/bin'``. <i>tervehdys</i>-tiedosto löytyi sieltä mistä pitikin, joten testasin vielä sen toimivuuden komennolla ``$ sudo salt 't001' cmd.run 'tervehdys'``. Hyvin toimii!
+Kävin nanossa korjaamassa tilanteen ja ajoin tilan uudestaan. Tällä kertaa homma toimi niin kuin pitikin, ja tuloste kertoi tilan ajon onnistuneen.
 
 <img width="465" alt="Näyttökuva 2023-11-27 015933" src="https://github.com/esskra/palvelinten_hallinta/assets/148875302/1f3ee2d0-b148-4109-8f97-1a782ef5343b">
+
+ Lopuksi kävin vielä tarkistamassa, että tiedosto on varmasti luotu t001-orjalle. Ensin listasin orjan /usr/local/bin hakemiston sisällön komennolla ``$ sudo salt 't001' cmd.run 'ls /usr/local/bin'``. <i>tervehdys</i>-tiedosto löytyi sieltä mistä pitikin, joten testasin vielä sen toimivuuden komennolla ``$ sudo salt 't001' cmd.run 'tervehdys'``. Hyvin toimii!
 
 <img width="469" alt="Näyttökuva 2023-11-27 020139" src="https://github.com/esskra/palvelinten_hallinta/assets/148875302/255eacf9-795f-4fb8-be8a-d9cc78fc7701">
 
 
+## d) Apassi
 
+## e) Ämpärillinen. 
 
 # Lähteet:
 
