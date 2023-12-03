@@ -9,3 +9,8 @@
 ## d) Kokeile Saltin file -toimintoa Windowsilla.
 ## e) Kokeile jotain itsellesi uutta toimintoa Saltista Windowsilla.
 
+## Lähteet:
+https://terokarvinen.com/2023/configuration-management-2023-autumn/#h6-windows
+https://github.com/therealhalonen/PhishSticks/blob/master/notes/ollikainen/windows.md
+https://refspecs.linuxfoundation.org/FHS_3.0/fhs/index.html
+https://docs.saltproject.io/salt/install-guide/en/latest/topics/install-by-operating-system/windows.html
