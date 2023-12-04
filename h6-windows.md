@@ -33,7 +33,8 @@ Tässä tehtävässä käyttöön pääsi taas aiemmista tehtävistä tuttu <i>f
 
 Tuloste kertoo, että komennon ajo on onnistunut ja uusi tiedosto <i>testi.txt</i> on luotu haluttuun sijaintiin. Halusin vielä tarkistaa, että tiedosto on luotu, ja sitä varten siirryin virtuaalikoneeni työpöydälle. Tiedosto löytyi sieltä mistä pitikin!
 
-<img width="45" alt="Näyttökuva 2023-12-03 214146" src="https://github.com/esskra/palvelinten_hallinta/assets/148875302/01f23d3c-86a6-4e5d-b8dc-bd014caa901c">
+<img width="45" alt="Näyttökuva 2023-12-03 214146" src="https://github.com/esskra/palvelinten_hallinta/assets/148875302/2514e215-3644-4c6e-ba15-965dc708595e">
+
 
 ## e) Kokeile jotain itsellesi uutta toimintoa Saltista Windowsilla.
 Tätä tehtävää varten lähdin etsimään jotain itselleni vielä vierasta toimintoa. Hetken googleteltuani löysin Salt Projectin omilta sivuilta [salt.modules.system](https://docs.saltproject.io/en/latest/ref/modules/all/salt.modules.system.html) toiminnon, ja päätin lähteä testaamaan sitä. 
