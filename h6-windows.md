@@ -3,7 +3,16 @@ Tässä raportissa kerron vastaukseni Palvelinten Hallinta- kurssin tehtävään
 
 ## x) Lue ja tiivistä. 
 - <b>Halonen, Rajala ja Ollikainen 2023: [Installing Windows 10 on a virtual machine](https://github.com/therealhalonen/PhishSticks/blob/master/notes/ollikainen/windows.md)</b>
+  - Selkeät ohjeet Windowsin asentamiseen VirtualBoxiin.
+  - Lataa ISO-tiedosto ja lisää VirtualBoxiin.
+  - Aseta koneelle ohjeiden mukaiset speksit.
+  - Kone on valmis käytettäväksi.
 - <b>LSB Workgroup, The Linux Foundation 2015: [Filesystem Hierarchy Standard](https://refspecs.linuxfoundation.org/FHS_3.0/fhs/index.html)</b>
+  - <i>/etc</i> sisältää ohjelmistojen konfiguraatiotiedostot.
+  - <i>/home</i> sisältää käyttäjien kotihakemistot.
+  - <i>/srv</i> sisältää palveluiden datatiedostot. Yksi metodeista on tallentaa dataa eri protokollien mukaan.
+  - <i>/usr</i> sisältää jaettavaa dataa.
+  - <i>/var</i> sisältää muuttuvia ja tilapäisiä tiedostoja (esim. logging-dataa)
 
 ## a) Asenna Windows virtuaalikoneeseen
 Asensin virtuaalikoneen 28.11. luennolla Halosen, Rajalan ja Ollikaisen [Installing Windows 10 on a virtual machine](https://github.com/therealhalonen/PhishSticks/blob/master/notes/ollikainen/windows.md) ohjeen mukaisesti. Asennuksesta ei ole kuvia, mutta suoritin sen täysin ohjeen mukaisesti. Alla vielä kuva asennetusta Windowsista VirtualBoxissa. 
@@ -47,6 +56,7 @@ Komennot toimi niin kuin pitikin!
 
 ## Lähteet:
 - Karvinen, T. 13.10.2023. Infra as Code 2023. Luettavissa: https://terokarvinen.com/2023/configuration-management-2023-autumn/#h6-windows Luettu 3.12.2023
+- LSB Workgroup, The Linux Foundation. 2015. Filesystem Hierarchy Standard. Luettavissa: https://refspecs.linuxfoundation.org/FHS_3.0/fhs/index.html Luettu: 3.12.2023
 - Halonen, Rajala ja Ollikainen, 2023. Installing Windows 10 on a virtual machine. Luettavissa: https://github.com/therealhalonen/PhishSticks/blob/master/notes/ollikainen/windows.md Luettu 3.12.2023
 - Salt Project, s.a.. Salt install guide Windows. Luettavissa: https://docs.saltproject.io/salt/install-guide/en/latest/topics/install-by-operating-system/windows.html Luettu: 3.12.2023
 - Salt Project, s.a.. salt.modules.system. Luettavissa: https://docs.saltproject.io/en/latest/ref/modules/all/salt.modules.system.html#module-salt.modules.system Luettu 3.12.2023
