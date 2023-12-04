@@ -6,7 +6,7 @@ Tässä raportissa kerron vastaukseni Palvelinten Hallinta- kurssin tehtävään
 - <b>LSB Workgroup, The Linux Foundation 2015: [Filesystem Hierarchy Standard](https://refspecs.linuxfoundation.org/FHS_3.0/fhs/index.html)</b>
 
 ## a) Asenna Windows virtuaalikoneeseen
-Asensin virtuaalikoneen 28.11. luennolla [Halosen, Rajalan ja Ollikaisen](https://github.com/therealhalonen/PhishSticks/blob/master/notes/ollikainen/windows.md) ohjeen mukaisesti. Asennuksesta ei ole kuvia, mutta suoritin sen täysin ohjeen mukaisesti. Alla vielä kuva asennetusta Windowsista VirtualBoxissa. 
+Asensin virtuaalikoneen 28.11. luennolla Halosen, Rajalan ja Ollikaisen[Installing Windows 10 on a virtual machine](https://github.com/therealhalonen/PhishSticks/blob/master/notes/ollikainen/windows.md) ohjeen mukaisesti. Asennuksesta ei ole kuvia, mutta suoritin sen täysin ohjeen mukaisesti. Alla vielä kuva asennetusta Windowsista VirtualBoxissa. 
 
 <img width="319" alt="Näyttökuva 2023-12-03 212733" src="https://github.com/esskra/palvelinten_hallinta/assets/148875302/d81867ee-15bd-4dd0-ba5a-95f6e7984f9d">
 
@@ -16,14 +16,21 @@ Aloitin tehtävän suorittamisen avaamalla selaimen virtuaalikoneessa, ja Googla
 <img width="246" alt="Näyttökuva 2023-12-03 213022" src="https://github.com/esskra/palvelinten_hallinta/assets/148875302/0e6d60a0-15f8-4920-b173-1632a9b36642">
 
 Suoritin asennuksen oletusasetuksilla. Jätin myös master ja minion hostnamet oletusasetuksille, sillä tulen käyttämään tässä tehtävässä Saltia vain paikallisesti. Asennuksen alussa sain ilmoituksen, että tarvittavaa versiota vcredistä ei ole asennettuna, joten asensin sen myös samalla.<br>
-Asennuksen jälkeen siirryin tarkistamaan, että asennus oli onnistunut. Avasin Powershellin <i>Run as Administrator</i>, jotta voin ajaa komentoja adminina tehtävän muissa osioissa. Powershellissä ajoin komennon ``$ salt-call --local --version``, ja komento kertoi asennuksen onnistuneen.
+Asennuksen jälkeen siirryin tarkistamaan, että asennus oli onnistunut. Avasin Powershellin <i>Run as Administrator</i>, jotta voin ajaa komentoja adminina tehtävän muissa osioissa. Powershellissä ajoin komennon ``salt-call --local --version``, ja komento kertoi asennuksen onnistuneen.
 
 <img width="290" alt="Näyttökuva 2023-12-03 213354" src="https://github.com/esskra/palvelinten_hallinta/assets/148875302/d24c4133-6ef1-4117-ad02-28f7cd7f68d9">
 
 ## c) Kerää Windows-koneesta tietoa grains.items -toiminnolla
+Tämän tehtävän suorittamisen aloitin ajamalla tutun ``salt-call --local grains.items`` komennon. Komennon ajo onnistui, ja se tulosti erilaisia tietoja koneesta. Tässä tehtävässä oli tarkoituksena kuitenkin poimia erilaisia tietoja koneesta, joten lähdin tarkentamaan hakutuloksia muuttamalla komentoa hieman. Komento tulee olla muodossa <i>grains.item</i>, sillä monikossa komento tulostaa kaikki tiedot. <br>
+Halusin selvittää virtuaalikoneen muistin määrän sekä IPv4 ja IPv6-osoitteet. Bongasin kuitenkin aiemmasta tulosteesta kohdan saltpath, jonka päättelin olevan Saltin sijainti koneella. Tulostin myös sen komennolla ``salt-call --local grains.item saltpath``. Alla tuloste jokaisesta komennosta.
 
+<img width="329" alt="Näyttökuva 2023-12-04 121026" src="https://github.com/esskra/palvelinten_hallinta/assets/148875302/fe32f850-b316-4b15-b541-e8388c225824">
 
 ## d) Kokeile Saltin file -toimintoa Windowsilla.
+
+
+
+
 ## e) Kokeile jotain itsellesi uutta toimintoa Saltista Windowsilla.
 
 ## Lähteet:
