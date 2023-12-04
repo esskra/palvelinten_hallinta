@@ -21,20 +21,32 @@ Asennuksen jälkeen siirryin tarkistamaan, että asennus oli onnistunut. Avasin 
 <img width="290" alt="Näyttökuva 2023-12-03 213354" src="https://github.com/esskra/palvelinten_hallinta/assets/148875302/d24c4133-6ef1-4117-ad02-28f7cd7f68d9">
 
 ## c) Kerää Windows-koneesta tietoa grains.items -toiminnolla
-Tämän tehtävän suorittamisen aloitin ajamalla tutun ``salt-call --local grains.items`` komennon. Komennon ajo onnistui, ja se tulosti erilaisia tietoja koneesta. Tässä tehtävässä oli tarkoituksena kuitenkin poimia erilaisia tietoja koneesta, joten lähdin tarkentamaan hakutuloksia muuttamalla komentoa hieman. Komento tulee olla muodossa <i>grains.item</i>, sillä monikossa komento tulostaa kaikki tiedot. <br>
-Halusin selvittää virtuaalikoneen muistin määrän sekä IPv4 ja IPv6-osoitteet. Bongasin kuitenkin aiemmasta tulosteesta kohdan saltpath, jonka päättelin olevan Saltin sijainti koneella. Tulostin myös sen komennolla ``salt-call --local grains.item saltpath``. Alla tuloste jokaisesta komennosta.
+Tämän tehtävän suorittamisen aloitin ajamalla tutun ``salt-call --local grains.items`` komennon. Komennon ajo onnistui, ja se tulosti erilaisia tietoja koneesta. Tässä tehtävässä oli tarkoituksena kuitenkin poimia keskeisiä tietoja koneesta, joten lähdin tarkentamaan hakutuloksia muuttamalla komentoa hieman. Komento tulee olla muodossa <i>grains.item</i>, sillä monikossa komento tulostaa kaikki tiedot. <br>
+Halusin selvittää virtuaalikoneen muistin määrän sekä IPv4 ja IPv6-osoitteet. Bongasin kuitenkin aiemmasta tulosteesta kohdan saltpath, ja selvitin myös sen komennolla ``salt-call --local grains.item saltpath``. Oletan saltpathin kertovan Saltin sijainnin virtuaalikoneella. Alla tuloste jokaisesta komennosta.
 
 <img width="329" alt="Näyttökuva 2023-12-04 121026" src="https://github.com/esskra/palvelinten_hallinta/assets/148875302/fe32f850-b316-4b15-b541-e8388c225824">
 
 ## d) Kokeile Saltin file -toimintoa Windowsilla.
+Tässä tehtävässä käyttöön pääsi taas aiemmista tehtävistä tuttu <i>file.managed</i> komento. Halusin luoda työpöydälle uuden <i>testi.txt</i> tiedoston, ja sitä varten ajoin komennon ``salt call --local state.single file.managed 'C:\users\essi\Desktop\testi.txt'``. 
 
+<img width="503" alt="Näyttökuva 2023-12-03 214131" src="https://github.com/esskra/palvelinten_hallinta/assets/148875302/f87621e3-1e46-4847-bb88-a31982d47eb7">
 
+Tuloste kertoo, että komennon ajo on onnistunut ja uusi tiedosto <i>testi.txt</i> on luotu haluttuun sijaintiin. Halusin vielä tarkistaa, että tiedosto on luotu, ja sitä varten siirryin virtuaalikoneeni työpöydälle. Tiedosto löytyi sieltä mistä pitikin!
 
+<img width="45" alt="Näyttökuva 2023-12-03 214146" src="https://github.com/esskra/palvelinten_hallinta/assets/148875302/01f23d3c-86a6-4e5d-b8dc-bd014caa901c">
 
 ## e) Kokeile jotain itsellesi uutta toimintoa Saltista Windowsilla.
+Tätä tehtävää varten lähdin etsimään jotain itselleni vielä vierasta toimintoa. Hetken googleteltuani löysin Salt Projectin omilta sivuilta [salt.modules.system](https://docs.saltproject.io/en/latest/ref/modules/all/salt.modules.system.html) toiminnon, ja päätin lähteä testaamaan sitä. 
+Ajoin ensimmäisenä komennon ``salt-call --local system.get_computer_desc``, minkä päättelin tulostavan halutun koneen kuvauksen. Komento printtasi tyhjää, mutta käyttämässäni ohjesivussa oli myös kerrottu komento, millä koneelle pystyy lisäämään kuvauksen. Lähdin ajamaan komentoa ``salt-call --local system.set_computer_desc "VirtuaaliWinukka"``. Komennossa lainausmerkkien sisällä oleva parametri tulee siis olemaan valitun koneen kuvaus.<br>
+Ajettuani <i>system.set_computer_desc</i>-komennon, ajoin vielä uudestaan ``salt-call --local system.get_computer_desc`` komennon, joka tulosti nyt äsken antamani kuvauksen koneelle.
+
+<img width="389" alt="Näyttökuva 2023-12-04 113553" src="https://github.com/esskra/palvelinten_hallinta/assets/148875302/3d31dd49-dd52-4c7d-9ef2-d6590a0dfff6">
+
+Komennot toimi niin kuin pitikin! 
 
 ## Lähteet:
 https://terokarvinen.com/2023/configuration-management-2023-autumn/#h6-windows
 https://github.com/therealhalonen/PhishSticks/blob/master/notes/ollikainen/windows.md
 https://refspecs.linuxfoundation.org/FHS_3.0/fhs/index.html
 https://docs.saltproject.io/salt/install-guide/en/latest/topics/install-by-operating-system/windows.html
+https://docs.saltproject.io/en/latest/ref/modules/all/salt.modules.system.html#module-salt.modules.system
