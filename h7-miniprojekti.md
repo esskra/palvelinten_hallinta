@@ -1,5 +1,5 @@
 # h7 Miniprojekti
-Kokemukseni Linuxista on kurssin loppuessa vielä varsin vähäistä, joten tämä miniprojekti on myös siitä johtuen melko yksinkertainen. Halusin kuitenkin päästä hyödyntämään mahdollisimman montaa kurssilla oppimaani asiaa, ja pohdinnan jälkeen päädyin siihen, että tämän miniprojektin tarkoituksena on luoda Vagrantilla herra/orja-arkkitehtuuri ja asentaa niille halutut konfiguraatiot. Käytössä on yksi herra-kone ja kaksi orja-konetta. Kaikki kohdat on tehty ensin käsin aiemmin luodulla herra/orja- arkkitehtuurilla, mutta tässä raportissa käyn läpi vain uudessa ympäristössä toteutetun automatisaation.
+Kokemukseni Linuxista on kurssin loppuessa vielä varsin vähäistä, joten tämä miniprojekti on myös siitä johtuen melko yksinkertainen. Halusin kuitenkin päästä hyödyntämään mahdollisimman montaa kurssilla oppimaani asiaa, ja pohdinnan jälkeen päädyin siihen, että tämän miniprojektin tarkoituksena on luoda Vagrantilla herra/orja-arkkitehtuuri ja asentaa sille halutut konfiguraatiot. Käytössä on yksi herra-kone ja kaksi orja-konetta. Kaikki kohdat on tehty ensin käsin aiemmin luodulla herra/orja- arkkitehtuurilla, mutta tässä raportissa käyn läpi vain uudessa ympäristössä toteutetun automatisaation.
 
 <b>Projektin tavoitteena on:</b>
 - Luoda onnistunut herra/orja-arkkitehtuuri Vagrantilla.
