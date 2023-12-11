@@ -55,7 +55,36 @@ Nyt oli jäljellä enää orjien avainten hyväksyminen, ja pääsisin varsinais
 
 <img width="323" alt="Näyttökuva 2023-12-10 221316" src="https://github.com/esskra/palvelinten_hallinta/assets/148875302/d206e868-d745-4683-83c0-208092a4522b">
 
-## Apache
+Yhteyden testaamisen jälkeen varmistin vielä, että koneiden paketit olivat ajan tasalla. Ajoin orjille komennot `` sudo salt '*' cmd.run 'sudo apt-get update'`` ja ``sudo salt '*' cmd.run 'sudo apt-get upgrade -y'``.
 
+## Moduulit
+Moduuleita varten loin uuden hakemiston komennolla ``sudo mkdir /srv/salt``. <i>/salt</i>-hakemistoon oli tarkoituksena luoda jokaiselle moduulille oma hakemisto.
+
+<b>Apache</b>
+Aloitin luomalla <i>/salt</i>-hakemistoon uuden hakemiston Apachea varten komennolla ``sudo mkdir apache``. <i>apache</i> -hakemistossa loin ensin html-tiedoston, joka tulisi korvaamaan Apachen <i>index.html</i>-tiedoston. Alla olevassa kuvassa tiedoston sisältö: 
+
+<img width="366" alt="Näyttökuva 2023-12-10 235734" src="https://github.com/esskra/palvelinten_hallinta/assets/148875302/d3a8802e-970c-4743-a59e-8bd8eb0c87ee">
+
+Luotuani <i>apache.html</i> tiedoston komennolla ``sudo nano apache.html`` siirryin nanoon luomaan <i>init.sls</i>-tiedostoa. Lisäsin sinne hieman muokattuna aiemmin [h5 CSI-Kerava](https://github.com/esskra/palvelinten_hallinta/blob/main/h5-CSI-kerava.md) tehtävässä käyttämäni konfiguraation:
+
+```
+apache2:
+ pkg.installed
+/var/www/html/index.html:
+ file.managed:
+   - source: salt://apache/apache.html
+/etc/apache2/mods-enabled/userdir.conf:
+ file.symlink:
+   - target: ../mods-available/userdir.conf
+/etc/apache2/mods-enabled/userdir.load:
+ file.symlink:
+   - target: ../mods-available/userdir.load
+apache2service:
+ service.running:
+   - name: apache2
+   - watch:
+     - file: /etc/apache2/mods-enabled/userdir.conf
+     - file: /etc/apache2/mods-enabled/userdir.load
+```
 
 
