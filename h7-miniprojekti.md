@@ -128,7 +128,10 @@ Hyvältä näyttää! Lopuksi ajoin vielä aiemmin asennetun ``$ cowsay`` komenn
 <img width="308" alt="Näyttökuva 2023-12-11 000903" src="https://github.com/esskra/palvelinten_hallinta/assets/148875302/0ae2462d-db31-4db1-941c-07ecd2f2b6d5">
 
 # Lähteet
-
+- Karvinen, T. 3.4.2018. Apache User Homepages Automatically – Salt Package-File-Service Example. Luettavissa: https://terokarvinen.com/2018/04/03/apache-user-homepages-automatically-salt-package-file-service-example/. Luettu 10.12.2023
+- Karvinen, T. 2023. Salt Vagrant - automatically provision one master and two slaves. Luettavissa: https://terokarvinen.com/2023/salt-vagrant/ Luettu 10.12.2023
+- Krakau, E. 2023. H5 CSI Kerava. Luettavissa: https://github.com/esskra/palvelinten_hallinta/blob/main/h5-CSI-kerava.md Luettu 10.12.2023
+- Krakau, E. 2023. H2 Karjaa. Luettavissa: https://github.com/esskra/palvelinten_hallinta/blob/main/h2-karjaa.md Luettu: 10.12.2023
 
 
 
