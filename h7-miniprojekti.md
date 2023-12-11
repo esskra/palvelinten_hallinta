@@ -102,7 +102,7 @@ Luotuani shell scriptin loin vielä <i>komento</i>-hakemistoon oman <i>init.sls<
 
 Tässä vaiheessa kaikki konfiguraatiot oli valmiina, ja pääsin siirtymään tilojen ajamiseen!
 
-### Tilan ajaminen
+## Tilan ajaminen
 Halusin ajaa tilat mahdollisimman tehokkaasti, ja sitä varten loin ``sudo nano top.sls``-komennolla <i>top.sls</i> tiedoston, jotta saisin kaikki komennot ajettua kerralla. Lisäsin tiedostoon seuraavan sisällön:
 
 <img width="304" alt="Näyttökuva 2023-12-11 000034" src="https://github.com/esskra/palvelinten_hallinta/assets/148875302/56f573dc-9b65-4ecd-99ea-cc2cf7fa73dd">
