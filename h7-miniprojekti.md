@@ -61,7 +61,6 @@ Yhteyden testaamisen jälkeen varmistin vielä, että koneiden paketit olivat aj
 Moduuleita varten loin uuden hakemiston komennolla ``$ sudo mkdir /srv/salt``. <i>/salt</i>-hakemistoon oli tarkoituksena luoda jokaiselle moduulille oma hakemisto.
 
 ### Apache
-<br>
 Aloitin luomalla <i>/salt</i>-hakemistoon uuden hakemiston Apachea varten komennolla ``$ sudo mkdir apache``. <i>apache</i> -hakemistossa loin ensin html-tiedoston, joka tulisi korvaamaan Apachen <i>index.html</i>-tiedoston. Alla olevassa kuvassa tiedoston sisältö: 
 
 <img width="366" alt="Näyttökuva 2023-12-10 235734" src="https://github.com/esskra/palvelinten_hallinta/assets/148875302/d3a8802e-970c-4743-a59e-8bd8eb0c87ee">
@@ -90,13 +89,12 @@ apache2service:
 Apachen osalta alkoi näyttää valmiilta, joten pääsin siirtymään seuraavaan osioon.
 
 ### Ohjelmat
-<br>
 Uusien pakettien asennusta varten loin taas uuden hakemiston /srv/salt-hakemistoon, tällä kertaa nimellä <i>ohjelmat</i>. Tällä kertaa riitti vain yhden tiedoston luominen, ja sen tein tuttuun tapaan komennolla ``$ sudo nano init.sls``. Alla olevassa kuvassa tiedoston sisältö, joka kertoo paketit, jotka haluan orjille asentaa:
 
 <img width="333" alt="Näyttökuva 2023-12-10 224447" src="https://github.com/esskra/palvelinten_hallinta/assets/148875302/410f41ad-ea3c-49fa-8dbe-547c80351fa2">
 
+
 ### Oma komento
-<br>
 Viimeiseksi loin vielä <i>komento</i>- hakemiston, jonne loin komennolla ``$ sudo nano komento`` lyhyen shell scriptin, joka tulisi toimimaan omana komentonaan. Scriptin tarkoituksena oli vain yksinkertaisesti echota haluttu viesti. 
 Luotuani shell scriptin loin vielä <i>komento</i>-hakemistoon oman <i>init.sls</i>-tiedoston. Lisäsin tiedostoon seuraavat konfiguraatiot: 
 
@@ -104,8 +102,7 @@ Luotuani shell scriptin loin vielä <i>komento</i>-hakemistoon oman <i>init.sls<
 
 Tässä vaiheessa kaikki konfiguraatiot oli valmiina, ja pääsin siirtymään tilojen ajamiseen!
 
-### Tilojen ajaminen
-<br>
+### Tilan ajaminen
 Halusin ajaa tilat mahdollisimman tehokkaasti, ja sitä varten loin ``sudo nano top.sls``-komennolla <i>top.sls</i> tiedoston, jotta saisin kaikki komennot ajettua kerralla. Lisäsin tiedostoon seuraavan sisällön:
 
 <img width="304" alt="Näyttökuva 2023-12-11 000034" src="https://github.com/esskra/palvelinten_hallinta/assets/148875302/56f573dc-9b65-4ecd-99ea-cc2cf7fa73dd">
