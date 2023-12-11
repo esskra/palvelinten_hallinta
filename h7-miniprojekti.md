@@ -107,17 +107,27 @@ Halusin ajaa tilat mahdollisimman tehokkaasti, ja sitä varten loin ``sudo nano 
 
 <img width="304" alt="Näyttökuva 2023-12-11 000034" src="https://github.com/esskra/palvelinten_hallinta/assets/148875302/56f573dc-9b65-4ecd-99ea-cc2cf7fa73dd">
 
-Tiedoston luotuani pääsin siirtymään tilan ajoon. Komennolla ``$ sudo salt '*' state.apply`` ajoin tilan molemmille orjille. Ajaminen sujui ilman virheitä. Alla kuva toisesta ajosta, jonka vuoksi muutoksia ei ole tehty. 
+Tiedoston luotuani pääsin siirtymään tilan ajoon. Komennolla ``$ sudo salt '*' state.apply`` ajoin tilan molemmille orjille. Alla olevat kuvat otettu toisesta ajosta, jotta saisin tulosteen mahtumaan kuvaan:
 
-
-<img width="368" alt="Näyttökuva 2023-12-10 231551" src="https://github.com/esskra/palvelinten_hallinta/assets/148875302/40e12f6a-392a-4a37-9d24-11f1addb40bb">
-
+<img width="435" alt="Näyttökuva 2023-12-10 231551" src="https://github.com/esskra/palvelinten_hallinta/assets/148875302/045a39f0-f4c5-4671-bc04-65629e63a746">
+<br>
 <img width="368" alt="Näyttökuva 2023-12-10 231604" src="https://github.com/esskra/palvelinten_hallinta/assets/148875302/18dbf631-a729-4b52-81ca-80927b53d6a5">
 
+<img width="192" alt="Näyttökuva 2023-12-10 231615" src="https://github.com/esskra/palvelinten_hallinta/assets/148875302/063ccabb-57fd-401a-aeea-e067d0d3d608">
 
+Tilan ajaminen onnistui ilman virheitä molemmille orjille! Nyt molemmilla orjilla oli siis asennettuna Apache, jonka oletuskotisivu oli muutettu aiemmin luomaani <i>apache.html</i> sivuun. Tämän lisäksi orjilla oli nyt käytössä aiemmin luomani komento, sekä asennettuna ohjelmat <i>git, curl, tree & cowsay</i>. 
 
+## Tarkistus
+Tilan onnistuneen ajon jälkeen siirryin vielä orjalle tarkistamaan, että kaikki toimi niin kuin pitikin. Alla olevassa kuvassa hieman testailua:
 
+<img width="341" alt="Näyttökuva 2023-12-11 000805" src="https://github.com/esskra/palvelinten_hallinta/assets/148875302/adf27cb2-7ec9-4990-b87c-4c8305737f9f">
 
+``$ curl`` ja ``$ tree`` komennot toimivat, minkä lisäksi oma komentoni ``$ komento`` toimii myös halutulla tavalla. Git on myös asentunut, ja asennettu versio on 2.30.2.
+Hyvältä näyttää! Lopuksi ajoin vielä aiemmin asennetun ``$ cowsay`` komennon, joka toimi myös.
+
+<img width="308" alt="Näyttökuva 2023-12-11 000903" src="https://github.com/esskra/palvelinten_hallinta/assets/148875302/0ae2462d-db31-4db1-941c-07ecd2f2b6d5">
+
+# Lähteet
 
 
 
