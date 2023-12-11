@@ -107,5 +107,18 @@ Halusin ajaa tilat mahdollisimman tehokkaasti, ja sitä varten loin ``sudo nano 
 
 <img width="304" alt="Näyttökuva 2023-12-11 000034" src="https://github.com/esskra/palvelinten_hallinta/assets/148875302/56f573dc-9b65-4ecd-99ea-cc2cf7fa73dd">
 
-Tiedoston luotuani pääsin siirtymään tilojen ajoon. Komennolla ``$ sudo salt '*' state.apply`` ajoin tilat molemmille orjille. Tulosteena onnistunut ajo, ja 
+Tiedoston luotuani pääsin siirtymään tilan ajoon. Komennolla ``$ sudo salt '*' state.apply`` ajoin tilan molemmille orjille. Ajaminen sujui ilman virheitä. Alla kuva toisesta ajosta, jonka vuoksi muutoksia ei ole tehty. 
+
+
+<img width="368" alt="Näyttökuva 2023-12-10 231551" src="https://github.com/esskra/palvelinten_hallinta/assets/148875302/40e12f6a-392a-4a37-9d24-11f1addb40bb">
+
+<img width="368" alt="Näyttökuva 2023-12-10 231604" src="https://github.com/esskra/palvelinten_hallinta/assets/148875302/18dbf631-a729-4b52-81ca-80927b53d6a5">
+
+
+
+
+
+
+
+
 
